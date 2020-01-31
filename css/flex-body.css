@@ -1,0 +1,78 @@
+<style>
+    
+body{
+    font-family: sans-serif, "helvetica";
+    font: helvetica;
+	font-size: 15px;
+	line-height: 35px;
+    width: 80%;
+    margin:0 auto;
+    text-align: left;}
+    
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  align-items: center;    
+}
+
+.flex-container > div {    
+  background-color: white;
+  width: 600px;
+  height: 350px;    
+  margin: 20px auto;
+  text-align: center;
+  line-height: 15px;
+  font-size: 25px;
+}
+
+.flex-container > h1 {
+  background-color: transparent;
+  width: 150px;
+  height: 75px;    
+  margin: 10px auto;
+  text-align: left;
+  line-height: 50px;
+  font-size: 22px;
+  color: black;    
+}    
+ 
+.flex-container > div > p {
+    background-color: white;
+    align-content: left;
+    line-height: 25px;
+    letter-spacing: 0px;
+    font-size: 15px;
+    color: black;
+    
+    }       
+    
+.flex-container > div > p > a {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    align-content: center;
+    line-height: 50px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: black;
+    
+    }   
+    
+/* RESPONSIVE MEDIA QUERIES */
+@media screen and (max-width: 720px ) {
+
+.flex-container {
+  flex-direction: column;
+}
+
+.flex-container > div {
+  width: 95%;
+
+    }
+    
+.flex-container > div > p > a {
+   margin-left: 20px;
+    }
+    }
+</style>
