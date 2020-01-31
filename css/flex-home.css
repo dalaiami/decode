@@ -1,7 +1,7 @@
 body {
   font-family: "helvetica", sans-serif;
   font-size: 15px;
-  color: black;
+  color: blue;
   line-height: 24px;
   width: 90%;
   margin: 0px auto;
@@ -27,24 +27,24 @@ body {
 }
 
 .flex-container > div > .about > a {
-  color: white;
+  color: blue;
   text-decoration: none;
 }
 
 .flex-container > div > .exhibitions > a {
-  color: white;
+  color: blue;
   text-decoration: none;
 }
 
 .flex-container > div > .shop >a {
-  color: white;
+  color: blue;
   text-decoration: none;
 }
 
 .flex-container > div > p >a {
   background-color: white;
   border-style: solid thin;
-  border-color: black;
+  border-color: blue;
   align-content: center;
   padding: 2px;
   line-height: 50px;
