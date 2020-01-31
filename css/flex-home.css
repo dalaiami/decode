@@ -28,17 +28,17 @@ body {
 
 .flex-container>div>.about>a {
   color: white;
-  text-decoration: none white;
+  text-decoration: none;
 }
 
 .flex-container>div>.exhibitions>a {
   color: white;
-  text-decoration: none white;
+  text-decoration: none;
 }
 
 .flex-container>div>.shop>a {
   color: white;
-  text-decoration: none white;
+  text-decoration: none;
 }
 
 .flex-container>div>p>a {
