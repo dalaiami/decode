@@ -1,66 +1,72 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="imagetoolbar" content="no" />
-    <title>Contact</title>
-      <link rel="shortcut icon" href="images/circle3.png">
-      <link rel="stylesheet" href="css/style.css" />
-      <link rel="stylesheet" href="css/flex-about.css" />
-      <script src="js/scripts.js"></script>
+  <title>Contact</title>
+  <link rel="shortcut icon" href="images/circle3.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/flex-about.css" />
+  <script src="js/scripts.js"></script>
 </head>
+
 <body>
   <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
   <div class="topnav" id="myTopnav">
-  <!--  <a href="index.php">Home</a>        -->
-  <a href="plan.html">Plan Your Visit</a>
-  <a href="exhibitions.html">Exhibitions</a>
-  <a href="newsletter.html">News</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <!-- <a href="cart.php">Cart</a> -->
-  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <!--  <a href="index.php">Home</a>        -->
+    <a href="plan.html">Plan Your Visit</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="newsletter.html">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <!-- <a href="cart.php">Cart</a> -->
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <div class="flex-container">
+    <h3>Contact Us</h3>
+  </div>
+  <div class="flex-container">
+    <p><span>Instagram</span></p>
+    <p><a href="http://instagram.com/dcodegallery" target="_blank">@dcodegallery</a></p>
+
+    <p><span>Phone</span></p>
+    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
+  </div>
+
+  <div class="flex-container">
+    <div>
+      <p><a href="shop.html">shop</a></p>
     </div>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-      x.className += " responsive";
-  } else {
-      x.className = "topnav";
-  }
-}
-</script>
-<div class="flex-container">
-  <h3>Contact Us</h3>
-    </div>
-            <div class="flex-container">
-            <p><span>Instagram</span></p>
-          <p><a href="http://instagram.com/dcodegallery" target="_blank">@dcodegallery</a></p>
-
-            <p><span>Phone</span></p>
-             <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
-    </div>
-
-<div class="flex-container">
-          <div><p><a href="shop.html">Tickets</a></p></div>
-        </div>
+  </div>
 </body>
 <footer>
-     <div id="address">
-         <a href="index.html">D-Code</a>
-        <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
-        <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
-        <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
-    </div>
-    <div id="social">
-        <p>Socials</p>
-    <p><li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
-        <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li></p>
-        </div>
-<!--
+  <div id="address">
+    <a href="index.html">D-Code</a>
+    <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
+    <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
+    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
+  </div>
+  <div id="social">
+    <p>Socials</p>
+    <p>
+      <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
+      <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
+    </p>
+  </div>
+  <!--
     <div id="other">
         <p>Information</p>
        <p><li><a href="contact.html">Contact</a></li>
@@ -70,4 +76,5 @@ function myFunction() {
 -->
 
 </footer>
+
 </html>
