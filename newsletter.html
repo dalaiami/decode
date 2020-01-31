@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="UTF-8">
   <title>Newsletter</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flex-news.css">
   <link rel="shortcut icon" href="images/circle3.png">
-</head>
+  <style>
+  body{
+      font-family: sans-serif, "helvetica";
+      font: helvetica;
+    font-size: 15px;
+    line-height: 35px;
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;}
 
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .flex-container > div {
+    background-color: transparent;
+    width: 1000px;
+    height: 350px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15px;
+  }
+
+  .flex-container > div > p > a {
+      background-color: white;
+      border-style: solid;
+      border-color: black;
+      align-content: center;
+      line-height: 50px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      color: black;
+
+      }
+
+  /* RESPONSIVE MEDIA QUERIES */
+  @media screen and (max-width: 720px ) {
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-container > div {
+    width: 95%;
+
+  }
+
+      }
+  </style>
+</head>
 <body>
   <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
   <div class="topnav" id="myTopnav">
