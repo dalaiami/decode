@@ -7,33 +7,34 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/circle3.png">
   <style>
-  body{
+    body {
       font-family: sans-serif, "helvetica";
       font: helvetica;
-    font-size: 15px;
-    line-height: 24px;
+      font-size: 15px;
+      line-height: 24px;
       width: 80%;
-      margin:0 auto;
-      text-align: center;}
+      margin: 0 auto;
+      text-align: center;
+    }
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-  }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+    }
 
-  .flex-container > div {
-    background-color: white;
-    width: 500px;
-    height: 350px;
-    margin: 50px auto;
-    text-align: center;
-    line-height: 15px;
-    font-size: 15px;
-  }
+    .flex-container>div {
+      background-color: white;
+      width: 500px;
+      height: 350px;
+      margin: 50px auto;
+      text-align: center;
+      line-height: 15px;
+      font-size: 15px;
+    }
 
-  .flex-container > div > p > a {
+    .flex-container>div>p>a {
       background-color: white;
       border-style: solid;
       border-color: black;
@@ -44,45 +45,48 @@
       font-size: 30px;
       color: black;
 
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 720px) {
+
+      .flex-container {
+        flex-direction: column;
       }
 
-  /* RESPONSIVE MEDIA QUERIES */
-  @media screen and (max-width: 720px ) {
-
-  .flex-container {
-    flex-direction: column;
-  }
-
-  .flex-container > div {
-    width: 95%;
-
-  }
-  .flex-container > img {
-    height: 60%;
-    width: 60%;
-  }
-
-  .flex-container2 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-  }
-
-  .flex-container2 > div {
-    background-color: white;
-    width: 100px;
-    height: 250px;
-    margin: auto;
-    text-align: center;
-    line-height: 10px;
-    font-size: 15px;
-  }
-  p > img {
-    width: 90%;
-  }
+      .flex-container>div {
+        width: 95%;
 
       }
+
+      .flex-container>img {
+        height: 60%;
+        width: 60%;
+      }
+
+      .flex-container2 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+      }
+
+      .flex-container2>div {
+        background-color: white;
+        width: 100px;
+        height: 250px;
+        margin: auto;
+        text-align: center;
+        line-height: 10px;
+        font-size: 15px;
+      }
+
+      p>img {
+        width: 90%;
+      }
+
+    }
+
     .space {
       background: white;
       height: 100px;

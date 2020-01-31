@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="imagetoolbar" content="no" />
@@ -8,33 +9,34 @@
   <link rel="stylesheet" href="css/style.css" />
   <script src="js/scripts.js"></script>
   <style>
-  body{
+    body {
       font-family: sans-serif, "helvetica";
       font: helvetica;
-    font-size: 15px;
-    line-height: 24px;
+      font-size: 15px;
+      line-height: 24px;
       width: 80%;
-      margin:0 auto;
-      text-align: center;}
+      margin: 0 auto;
+      text-align: center;
+    }
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-  }
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+    }
 
-  .flex-container > div {
-    background-color: white;
-    width: 500px;
-    height: 350px;
-    margin: 50px auto;
-    text-align: center;
-    line-height: 15px;
-    font-size: 15px;
-  }
+    .flex-container>div {
+      background-color: white;
+      width: 500px;
+      height: 350px;
+      margin: 50px auto;
+      text-align: center;
+      line-height: 15px;
+      font-size: 15px;
+    }
 
-  .flex-container > div > p > a {
+    .flex-container>div>p>a {
       background-color: white;
       border-style: solid;
       border-color: black;
@@ -45,45 +47,47 @@
       font-size: 30px;
       color: black;
 
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 720px) {
+
+      .flex-container {
+        flex-direction: column;
       }
 
-  /* RESPONSIVE MEDIA QUERIES */
-  @media screen and (max-width: 720px ) {
-
-  .flex-container {
-    flex-direction: column;
-  }
-
-  .flex-container > div {
-    width: 95%;
-
-  }
-  .flex-container > img {
-    height: 60%;
-    width: 60%;
-  }
-
-  .flex-container2 {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-  }
-
-  .flex-container2 > div {
-    background-color: white;
-    width: 100px;
-    height: 250px;
-    margin: auto;
-    text-align: center;
-    line-height: 10px;
-    font-size: 15px;
-  }
-  p > img {
-    width: 90%;
-  }
+      .flex-container>div {
+        width: 95%;
 
       }
+
+      .flex-container>img {
+        height: 60%;
+        width: 60%;
+      }
+
+      .flex-container2 {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        align-items: center;
+      }
+
+      .flex-container2>div {
+        background-color: white;
+        width: 100px;
+        height: 250px;
+        margin: auto;
+        text-align: center;
+        line-height: 10px;
+        font-size: 15px;
+      }
+
+      p>img {
+        width: 90%;
+      }
+
+    }
   </style>
 </head>
 
@@ -112,17 +116,18 @@
     }
   </script>
   <div class="flex-container">
-    <div><p><span>Instagram</span></p>
-    <p><a href="http://instagram.com/dcodegallery" target="_blank">@dcodegallery</a></p>
-    <p><span>Phone</span></p>
-    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
-  </div>
-
-  <div class="flex-container">
     <div>
-      <p><a href="shop.html">shop</a></p>
+      <p><span>Instagram</span></p>
+      <p><a href="http://instagram.com/dcodegallery" target="_blank">@dcodegallery</a></p>
+      <p><span>Phone</span></p>
+      <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
     </div>
-  </div>
+
+    <div class="flex-container">
+      <div>
+        <p><a href="shop.html">shop</a></p>
+      </div>
+    </div>
 </body>
 <footer>
   <div id="address">
