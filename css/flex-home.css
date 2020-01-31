@@ -26,26 +26,27 @@ body {
   font-size: 25px;
 }
 
-.flex-container>div>.about>a {
+.flex-container > div > .about > a {
   color: white;
   text-decoration: none;
 }
 
-.flex-container>div>.exhibitions>a {
+.flex-container > div > .exhibitions > a {
   color: white;
   text-decoration: none;
 }
 
-.flex-container>div>.shop>a {
+.flex-container > div > .shop >a {
   color: white;
   text-decoration: none;
 }
 
-.flex-container>div>p>a {
+.flex-container > div > p >a {
   background-color: white;
-  border-style: solid;
+  border-style: solid thin;
   border-color: black;
   align-content: center;
+  padding: 2px;
   line-height: 50px;
   letter-spacing: 3px;
   font-size: 30px;
