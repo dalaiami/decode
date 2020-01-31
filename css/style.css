@@ -14,7 +14,7 @@ html , body {
   overflow: hidden;
   background-color: white;
   position: absolute;
-  left: 10px;
+  right: 10px;
   top: 0;
 /*
   border-bottom: solid;
