@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-	<title>D-Code</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/flex-home.css">
-<link rel="shortcut icon" href="images/circle3.png">
-<style>
-    .exhibitions {background: url('images/box.jpg'); height: 200; width: 230; position: center middle no-repeat;}
-    .artists {background: url('images/box.jpg'); height: 200; width: 230; position: center middle no-repeat;}
-    .shop {background: url('images/'); height: 200; width: 230; position: center middle no-repeat;}
-</style>
+  <meta charset="UTF-8">
+  <title>D-Code</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flex-home.css">
+  <link rel="shortcut icon" href="images/circle3.png">
+  <style>
+    .about {
+      background: url('images/box.jpg');
+      height: 200;
+      width: 230;
+      position: center middle no-repeat;
+    }
+
+    .exhibitions {
+      background: url('images/box.jpg');
+      height: 200;
+      width: 230;
+      position: center middle no-repeat;
+    }
+
+    .shop {
+      background: url('images/');
+      height: 200;
+      width: 230;
+      position: center middle no-repeat;
+    }
+  </style>
 </head>
+
 <body>
   <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
   <div class="topnav" id="myTopnav">
-<!--  <a href="index.php">Home</a>        -->
-  <a href="plan.html">Plan Your Visit</a>
-  <a href="exhibitions.html">Exhibitions</a>
-  <a href="newsletter.html">News</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <!-- <a href="cart.php">Cart</a> -->
-  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <!--  <a href="index.php">Home</a>        -->
+    <a href="plan.html">Plan Your Visit</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="newsletter.html">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <!-- <a href="cart.php">Cart</a> -->
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
-    </div>
+  </div>
 
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+      } else {
         x.className = "topnav";
+      }
     }
-}
-</script>
-<div class="flex-container">
-      <div><div class="exhibitions">
-          <a href="exhibitions.html">exhibitions</a>
-          </div></div>
-      <div><div class="artists">
-          <a href="artists.html">artists</a>
-    </div></div>
+  </script>
+  <div class="flex-container">
+    <div>
+      <div class="about">
+        <a href="about.html">about us</a>
+      </div>
     </div>
- <div class="flex-container">
-     <div><div class="shop">
-         <a href="shop.html">tickets</a></div>
-</div></div>
+    <div>
+      <div class="exhibitions">
+        <a href="exhibitions.html">exhibitions</a>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div>
+      <div class="shop">
+        <a href="shop.html">shop</a></div>
+    </div>
+  </div>
 
-<div class="flex-container">
-      <div><p><a href="contact.html">Join the Newsletter</a></p></div>
+  <div class="flex-container">
+    <div>
+      <p><a href="http://instagram.com/dcodegallery" target="_blank">instagram</a></p>
     </div>
-    </body>
-    <footer>
-         <div id="address">
-             <a href="index.html">D-Code</a>
-            <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
-            <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
-            <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
-        </div>
-        <div id="social">
-            <p>Socials</p>
-        <p><li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
-            <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li></p>
-            </div>
-    <!--
+  </div>
+</body>
+<footer>
+  <div id="address">
+    <a href="index.html">D-Code</a>
+    <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
+    <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
+    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
+  </div>
+  <div id="social">
+    <p>Socials</p>
+    <p>
+      <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
+      <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
+    </p>
+  </div>
+  <!--
         <div id="other">
             <p>Information</p>
            <p><li><a href="contact.html">Contact</a></li>
@@ -75,5 +104,6 @@ function myFunction() {
             </div>
     -->
 
-    </footer>
+</footer>
+
 </html>
