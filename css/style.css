@@ -1,6 +1,7 @@
 html , body {
-  font-family: sans-serif , "helvetica";
+  font-family: "helvetica" , sans-serif ;
   margin: 10px;
+  padding: 10px;
 }
 #logo {
     margin: 30px 0px auto;
