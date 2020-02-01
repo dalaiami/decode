@@ -43,7 +43,28 @@
       letter-spacing: 3px;
       font-size: 30px;
       color: black;
-
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      background-color: transparent;
+      margin: 25px 70px 50px 5px;
+      padding: 25px;
+    }
+    .grid-item {
+      background-color: transparent;
+      border: 0px solid rgba(0, 0, 0, 0.8);
+      padding: 0px 10px;
+      font-size: 30px;
+      color: white;
+      text-align: center;
+    }
+    .grid-item > img {
+      height: 275px;
+      width: 175px;
+    }
+    .grid-item > iframe {
+      padding-left: 50px;
     }
 
     /* RESPONSIVE MEDIA QUERIES */
@@ -82,6 +103,29 @@
 
       p>img {
         width: 90%;
+      }
+      .grid-container {
+        display: inline;
+        margin: 40px 40px 40px 40px;
+        padding: 20px;
+      }
+      img{
+        height: 50%;
+        width: 50%;
+      }
+      iframe{
+        height: 50%;
+        width: 50%;
+      }
+      .proposal > img {
+        -webkit-transition: all 300ms 0ms ease-in-out;
+        transition: all 300ms 0ms ease-in-out;
+        width: 200px;
+      }
+
+      .proposal >  img:hover {
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
       }
 
     }
