@@ -19,7 +19,7 @@ html, body {
   position: absolute;
   right: 10px;
   top: 10px;
-  border-bottom: solid whitesmoke thin;
+  border: solid whitesmoke thin;
   border-radius: 20px;
 }
 
