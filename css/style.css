@@ -19,10 +19,8 @@ html, body {
   position: absolute;
   right: 10px;
   top: 10px;
-  border-bottom: solid;
+  border-bottom: solid whitesmoke thin;
   border-radius: 20px;
-  border-bottom-style: thin;
-  border-color: whitesmoke;
 }
 
 .topnav a {
