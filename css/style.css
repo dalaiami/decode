@@ -92,7 +92,7 @@ a:active {
   text-decoration: none
 }
 
-#loop {
+#loop  {
   position: fixed;
   background-color: blue;
   align-content: center;
@@ -100,11 +100,19 @@ a:active {
   padding: 10px;
   top: 70px;
   right: 0px;
-  line-height: 25px;
+  line-height: 22px;
   font-size: 20px;
   letter-spacing: 3px;
   color: white;
   text-transform: lowercase:
+}
+
+#loop > a {
+  color: white;
+}
+
+#loop > a:hover {
+  color: whitesmoke;
 }
 
 h1 {
