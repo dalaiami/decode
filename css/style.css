@@ -181,6 +181,10 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  #logo {
+    height: 70%;
+    }
+    
   footer {
     margin: 100px;
     width: 95%;
@@ -191,9 +195,6 @@ footer {
   #social, #other {
     display: none;
   }
-  
-  /* #logo {
-  height: 50%;
-  } */
+
 
 }
