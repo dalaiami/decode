@@ -112,7 +112,7 @@ a:active {
   color: black;
 }
 
-#loop > a:hover {
+#loop > a:hover , a:visited {
   color: gray;
 }
 
