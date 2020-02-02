@@ -170,7 +170,12 @@ footer {
 }
 #top-button {
   right: 0px;
-  bottom: 0px; 
+  bottom: 0px;
+}
+.space {
+  background: white;
+  height: 100px;
+  position: center middle no-repeat;
 }
 
 
