@@ -1,86 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-	<title>Exhibitions</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/flex-body.css">
-<link rel="shortcut icon" href="images/circle3.png">
-<style>
-.space {
-  height: 100px;
-}
-</style>
+  <meta charset="UTF-8">
+  <title>Exhibitions</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flex-body.css">
+  <link rel="shortcut icon" href="images/circle3.png">
+  <style>
+    .space {
+      height: 100px;
+    }
+  </style>
 </head>
+
 <body>
-<div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-<div class="topnav" id="myTopnav">
-<!--  <a href="index.php">Home</a>        -->
-<a href="plan.html">Plan Your Visit</a>
-<a href="exhibitions.html">Exhibitions</a>
-<a href="shop.html">Shop</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-<!-- <a href="cart.php">Cart</a> -->
-<a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+  <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+  <div class="topnav" id="myTopnav">
+    <!--  <a href="index.php">Home</a>        -->
+    <a href="plan.html">Plan Your Visit</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <!-- <a href="cart.php">Cart</a> -->
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
   </div>
 
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-      x.className += " responsive";
-  } else {
-      x.className = "topnav";
-  }
-}
-</script>
-<div class="space"></div>
-<div class="flex-container">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <div class="space"></div>
+  <div class="flex-container">
     <h1>Featured <br /> Show</h1>
-    <div><a href="translations.html"><img src="images/translations.jpg" width="300px"/></a></div>
-    <div><a href="translations.html"><h6>Translations</h6></a>
-      <p>a collaborative showing between artist and technology</p></div>
-   </div>
-<div class="flex-container">
-  <h1>Current Exhibitions</h1>
-  <div><p><img src="images/stickers3.jpg" width="230px"></p>
-  <p>Meta</p></div>
-   <div><p><img src="images/rgb.jpg" width="230px"></p>
-  <p>RGB CMYK</p></div>
-   <div><p><img src="images/smeared1.jpg" width="230px"></p>
-  <p>Scanned</p></div>
-  </div>
-<div class="flex-container">
-    <h1>Upcoming Exhibitions</h1>
-    <div><p><img src="images/lorem.jpg" width="230px"></p>
-     <p>Lorem Ipsum</p></div>
-    <div><p><img src="images/error1.jpg" width="230px"></p>
-     <p>Error</p></div>
-    <div><p><img src="images/grid.jpg" width="230px"></p>
-     <p>The Grid</p></div>
+    <div><a href="translations.html"><img src="images/translations.jpg" width="300px" /></a></div>
+    <div><a href="translations.html">
+        <h6>Translations</h6>
+      </a>
+      <p>a collaborative showing between artist and technology</p>
     </div>
-    <div class="flex-container">
-        <h1>Ongoing Exhibitions</h1>
-         <div><p><img src="images/bp4.jpg" width="230px"></p>
-       <p>Post-Internet</p></div>
-        <div><p><img src="images/kermitzoom.jpg" width="230px"></p>
-       <p>Moving Document</p></div>
-        <div><p><img src="images/spam4.jpg" width="230px"></p>
-       <p>Digital Pop</p></div>
-   </div>
-    <div class="flex-container">
-        <h1>Past Exhibitions</h1>
-         <div><p><img src="images/decode1.jpg" width="230px"></p>
-        <p>Decode</p></div>
-        <div><p><img src="images/thankyou1.jpg" width="230px"></p>
-        <p>Thank You</p></div>
-        <div><p><img src="images/lightson.jpg" width="230px"></p>
-        <p>Moiré</p></div>
-        </div>
-<div class="space"></div>
+  </div>
+  <div class="flex-container">
+    <h1>Current Exhibitions</h1>
+    <div>
+      <p><img src="images/stickers3.jpg" width="230px"></p>
+      <p>Meta</p>
+    </div>
+    <div>
+      <p><img src="images/rgb.jpg" width="230px"></p>
+      <p>RGB CMYK</p>
+    </div>
+    <div>
+      <p><img src="images/smeared1.jpg" width="230px"></p>
+      <p>Scanned</p>
+    </div>
+  </div>
+  <div class="flex-container">
+    <h1>Upcoming Exhibitions</h1>
+    <div>
+      <p><img src="images/lorem.jpg" width="230px"></p>
+      <p>Lorem Ipsum</p>
+    </div>
+    <div>
+      <p><img src="images/error1.jpg" width="230px"></p>
+      <p>Error</p>
+    </div>
+    <div>
+      <p><img src="images/grid.jpg" width="230px"></p>
+      <p>The Grid</p>
+    </div>
+  </div>
+  <div class="flex-container">
+    <h1>Ongoing Exhibitions</h1>
+    <div>
+      <p><img src="images/bp4.jpg" width="230px"></p>
+      <p>Post-Internet</p>
+    </div>
+    <div>
+      <p><img src="images/kermitzoom.jpg" width="230px"></p>
+      <p>Moving Document</p>
+    </div>
+    <div>
+      <p><img src="images/spam4.jpg" width="230px"></p>
+      <p>Digital Pop</p>
+    </div>
+  </div>
+  <div class="flex-container">
+    <h1>Past Exhibitions</h1>
+    <div>
+      <p><img src="images/decode1.jpg" width="230px"></p>
+      <p>Decode</p>
+    </div>
+    <div>
+      <p><img src="images/thankyou1.jpg" width="230px"></p>
+      <p>Thank You</p>
+    </div>
+    <div>
+      <p><img src="images/lightson.jpg" width="230px"></p>
+      <p>Moiré</p>
+    </div>
+  </div>
+  <div class="space"></div>
 </body>
 <footer>
   <div id="address">
@@ -104,8 +133,9 @@ function myFunction() {
       <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
     </p>
   </div>
-    <div id="top-button"><a href="#top"><img src="images/smile.png" height="20px" /></a></div>
-    <div class="space"></div>
+  <div id="top-button"><a href="#top"><img src="images/smile.png" height="20px" /></a></div>
+  <div class="space"></div>
 
 </footer>
+
 </html>
