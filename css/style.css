@@ -71,17 +71,17 @@ html, body {
   }
 }
 
-a:link , a:visited {
+a:link, a:visited {
   color: gray;
   text-decoration: none
 }
 
-a:hover , a:active {
+a:hover, a:active {
   color: black;
   text-decoration: none
 }
 
-#loop  {
+#loop {
   position: fixed;
   top: 70px;
   right: 0px;
@@ -98,22 +98,22 @@ a:hover , a:active {
   text-transform: uppercase:
 }
 
-#loop > a {
+#loop>a {
   color: black;
 }
 
-#loop > a:hover , a:visited {
+#loop>a:hover, a:visited {
   color: gray;
 }
 
 h1 {
   text-align: center;
   text-transform: uppercase;
-  }
+}
 
-  h4 {
-    text-transform: uppercase;
-  }
+h4 {
+  text-transform: uppercase;
+}
 
 footer {
   display: flex;
@@ -198,14 +198,14 @@ footer {
 @media screen and (max-width: 600px) {
   #logo {
     height: 70%;
-    }
+  }
 
-#loop {
-  position: sticky;
-  bottom: 30px;
-  right: 0px;
-  width: 30%;
-}
+  #loop {
+    position: sticky;
+    bottom: 30px;
+    right: 0px;
+    width: 30%;
+  }
 
   footer {
     margin: 100px;
@@ -217,6 +217,4 @@ footer {
   #social, #other {
     display: none;
   }
-
-
 }
