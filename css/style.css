@@ -187,6 +187,9 @@ footer {
   #social, #other {
     display: none;
   }
+  h1{
+    text-align: center;
+  }
   /* #logo {
   height: 50%;
   } */
