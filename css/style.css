@@ -96,7 +96,7 @@ a:active {
   text-decoration: none
 }
 
-footer {
+footer { {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -177,7 +177,7 @@ footer {
   height: 100px;
   position: center middle no-repeat;
 }
-
+}
 
 @media screen and (max-width: 600px) {
   footer {
