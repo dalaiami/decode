@@ -121,6 +121,10 @@ h1 {
   text-transform: uppercase;
   }
 
+  h4 {
+    text-transform: uppercase;
+  }
+
 footer {
   display: flex;
   flex-direction: row;
