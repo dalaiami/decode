@@ -95,7 +95,7 @@ a:active {
 #loop  {
   position: fixed;
   background-color: white;
-  border: solid black thin;
+  border: solid black;
   align-content: center;
   margin: 10px;
   padding: 10px;
