@@ -16,7 +16,7 @@ html, body {
 .topnav {
   overflow: hidden;
   background-color: white;
-  position: fixed;
+  position: absolute;
   right: 10px;
   top: 10px;
   border-bottom: solid;
