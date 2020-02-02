@@ -204,6 +204,12 @@ footer {
     height: 70%;
     }
 
+#loop {
+  position: sticky;
+  bottom: 30px;
+  right: 0px;
+}
+
   footer {
     margin: 100px;
     width: 95%;
