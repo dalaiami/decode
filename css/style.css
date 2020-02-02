@@ -105,7 +105,7 @@ a:active {
   font-size: 20px;
   letter-spacing: 3px;
   color: black;
-  text-transform: lowercase:
+  text-transform: uppercase:
 }
 
 #loop > a {
@@ -120,7 +120,6 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   }
-}
 
 footer {
   display: flex;
