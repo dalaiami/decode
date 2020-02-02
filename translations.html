@@ -8,6 +8,35 @@
   <link rel="stylesheet" href="css/flex-body.css">
   <link rel="shortcut icon" href="images/circle3.png">
   <style>
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+  }
+
+  .flex-container>div {
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    margin: 50px auto;
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+  }
+
+  .flex-container>div>p>a {
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    align-content: center;
+    padding: 10px;
+    line-height: 50px;
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: black;
+    display: inline;
+  }
   .space {
     height: 100px;
   }

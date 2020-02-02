@@ -96,13 +96,13 @@ a:active {
   text-decoration: none
 }
 
-footer { {
+footer {
   display: flex;
   flex-direction: row;
   align-content: center;
   padding: 10px;
   margin: 10px auto;
-  height: 50px;
+  height: 100px;
   width: 100%;
   border-top: solid;
   border-top-color: whitesmoke;
@@ -177,7 +177,7 @@ footer { {
   height: 100px;
   position: center middle no-repeat;
 }
-}
+
 
 @media screen and (max-width: 600px) {
   footer {
