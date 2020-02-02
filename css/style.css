@@ -96,6 +96,10 @@ a:active {
   text-decoration: none
 }
 
+h1{
+  text-align: center;
+}
+
 footer {
   display: flex;
   flex-direction: row;
