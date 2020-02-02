@@ -19,11 +19,9 @@ html, body {
   position: absolute;
   right: 10px;
   top: 10px;
-  /*
   border-bottom: solid;
   border-bottom-style: thin;
   border-color: whitesmoke;
-*/
 }
 
 .topnav a {
@@ -184,7 +182,7 @@ footer {
   #logo {
     height: 70%;
     }
-    
+
   footer {
     margin: 100px;
     width: 95%;
