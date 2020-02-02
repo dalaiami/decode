@@ -90,6 +90,7 @@ a:hover , a:active {
   align-content: center;
   margin: 10px;
   padding: 5px;
+  border-radius: 20px;
   top: 70px;
   right: 0px;
   line-height: 22px;
