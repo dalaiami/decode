@@ -140,7 +140,7 @@ footer {
 #social {
   margin: 50px auto;
   width: 20%;
-  float: center;
+  float: right;
   font-size: 12px;
   line-height: 20px;
   text-align: left;
@@ -156,7 +156,7 @@ footer {
 #other {
   margin: 50px 20px;
   width: 20%;
-  float: right;
+  float: center;
   font-size: 12px;
   line-height: 20px;
   text-align: left;
