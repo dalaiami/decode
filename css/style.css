@@ -172,11 +172,11 @@ footer {
   right: 0px;
   bottom: 0px;
 }
-.space {
+/* .space {
   background: white;
-  height: 100px;
+  height: 50px;
   position: center middle no-repeat;
-}
+} */
 
 
 @media screen and (max-width: 600px) {
