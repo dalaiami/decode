@@ -1,125 +1,133 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-	<title>Cart</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" href="images/circle3.png">
-<style>
-body{
-    font-family: sans-serif, "helvetica", black;
-    font: helvetica;
-  font-size: 15px;
-  line-height: 25px;
-    width: 100%;
-    margin:0 auto;
-    text-align: left;}
-
-.flex-container {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  align-items: left;
-}
-
-.flex-container > div {
-  background-color: white;
-  width: 1100px;
-  height: 335px;
-  margin: 0px auto;
-  text-align: left;
-  line-height: 15px;
-  font-size: 25px;
-}
-
-.flex-container > div > b {
-    margin-left: 0px;
-    line-height: 100px;
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/circle3.png">
+  <style>
+    body {
+      font-family: sans-serif, "helvetica", black;
+      font: helvetica;
+      font-size: 15px;
+      line-height: 25px;
+      width: 100%;
+      margin: 0 auto;
+      text-align: left;
     }
 
-.flex-container > div > p {
-    margin-bottom: 30px;
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: left;
     }
 
-.flex-container > div > p > a {
-    background-color: white;
-    text-decoration: underline;
-    text-decoration-color: gray;
-    margin-bottom: 100px;
-    align-content: left;
-    line-height: 20px;
-    letter-spacing: 1px;
-    font-size: 15px;
-    color: black;
-
+    .flex-container>div {
+      background-color: white;
+      width: 1100px;
+      height: 335px;
+      margin: 0px auto;
+      text-align: left;
+      line-height: 15px;
+      font-size: 25px;
     }
-/* RESPONSIVE MEDIA QUERIES */
-@media screen and (max-width: 720px ) {
 
-.flex-container {
-  flex-direction: column;
-}
+    .flex-container>div>b {
+      margin-left: 0px;
+      line-height: 100px;
+    }
 
-.flex-container > div {
-  width: 90%;
-  height: 255px;
-  margin-left: 35px;
+    .flex-container>div>p {
+      margin-bottom: 30px;
+    }
+
+    .flex-container>div>p>a {
+      background-color: white;
+      text-decoration: underline;
+      text-decoration-color: gray;
+      margin-bottom: 100px;
+      align-content: left;
+      line-height: 20px;
+      letter-spacing: 1px;
+      font-size: 15px;
+      color: black;
 
     }
 
-.flex-container > div > p {
-    margin-bottom: 50px;
-    line-height: 30px
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 720px) {
 
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .flex-container>div {
+        width: 90%;
+        height: 255px;
+        margin-left: 35px;
+
+      }
+
+      .flex-container>div>p {
+        margin-bottom: 50px;
+        line-height: 30px
+      }
     }
-        }
-
-</style>
+  </style>
 </head>
+
 <body>
   <div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
   <div class="topnav" id="myTopnav">
-  <!--  <a href="index.php">Home</a>        -->
-  <a href="plan.html">Plan Your Visit</a>
-  <a href="exhibitions.html">Exhibitions</a>
-  <a href="newsletter.html">News</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <!-- <a href="cart.php">Cart</a> -->
-  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <!--  <a href="index.php">Home</a>        -->
+    <a href="plan.html">Plan Your Visit</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="newsletter.html">News</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <!-- <a href="cart.php">Cart</a> -->
+    <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
-    </div>
+  </div>
 
 
   <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+      } else {
         x.className = "topnav";
+      }
     }
-  }
   </script>
-<div class="flex-container">
-    <div><b>Shopping Cart</b>
-        <p>You have no items in your shopping cart.</p></div>
-    <div><p><a href="shop.html">Continue Shopping</a></p></div>
+  <div class="flex-container">
+    <div><b>Shopping Cart</b></div>
+    <div>
+      <p>You have no items in your shopping cart.</p>
     </div>
+    <div class="flex-container">
+      <p><a href="shop.html">Continue Shopping</a></p>
+    </div>
+  </div>
 </body>
 <footer>
-     <div id="address">
-         <a href="index.html">D-Code</a>
-        <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
-        <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
-        <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
-    </div>
-    <div id="social">
-        <p>Socials</p>
-    <p><li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
-        <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li></p>
-        </div>
-<!--
+  <div id="address">
+    <a href="index.html">D-Code</a>
+    <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
+    <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
+    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
+  </div>
+  <div id="social">
+    <p>Socials</p>
+    <p>
+      <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
+      <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
+    </p>
+  </div>
+  <!--
     <div id="other">
         <p>Information</p>
        <p><li><a href="contact.html">Contact</a></li>
@@ -129,4 +137,5 @@ body{
 -->
 
 </footer>
+
 </html>
