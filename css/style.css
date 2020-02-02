@@ -94,7 +94,8 @@ a:active {
 
 #loop  {
   position: fixed;
-  background-color: blue;
+  background-color: white;
+  border: solid black thin;
   align-content: center;
   margin: 10px;
   padding: 10px;
@@ -103,16 +104,16 @@ a:active {
   line-height: 22px;
   font-size: 20px;
   letter-spacing: 3px;
-  color: white;
+  color: black;
   text-transform: lowercase:
 }
 
 #loop > a {
-  color: white;
+  color: black;
 }
 
 #loop > a:hover {
-  color: whitesmoke;
+  color: gray;
 }
 
 h1 {
