@@ -51,6 +51,8 @@ body {
   border: solid black;
   border-radius: 20px;
   align-content: center;
+  margin: 10px;
+  padding: 10px;
   line-height: 50px;
   letter-spacing: 3px;
   font-size: 30px;
