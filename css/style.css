@@ -72,17 +72,17 @@ a:hover, a:active {
   background: blue;
 }
 
-#loop>a {
+#loop > p > a {
   color: black;
   padding-bottom: 10px;
 }
 
-#loop> p>a:hover {
+#loop> p > a:hover {
   color: white;
 }
 
-#loop a:visited {
-  color: black
+#loop > p > a:visited {
+  color: blue;
 }
 
 h1 {
