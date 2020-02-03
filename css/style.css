@@ -92,8 +92,8 @@ a:hover, a:active {
   border-radius: 20px;
   align-content: center;
   margin: 10px;
-  padding: 5px;
-  height: 30px;
+  padding: 10px;
+  line-height: 50px;
   font-size: 20px;
   letter-spacing: 3px;
   color: black;
