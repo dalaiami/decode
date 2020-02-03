@@ -100,16 +100,16 @@ a:hover, a:active {
 }
 
 #loop:hover {
-  background: blue; 
+  background: blue;
 }
 
 #loop>a {
-  color: blue;
+  color: black;
   padding-bottom: 10px;
 }
 
 #loop>a:hover, a:visited {
-  color: blue;
+  color: black;
 }
 
 h1 {
