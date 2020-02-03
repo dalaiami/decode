@@ -99,14 +99,17 @@ a:hover, a:active {
   text-align: center;
 }
 
+#loop:hover {
+  background: blue; 
+}
 
 #loop>a {
-  color: black;
+  color: blue;
   padding-bottom: 10px;
 }
 
 #loop>a:hover, a:visited {
-  color: black;
+  color: blue;
 }
 
 h1 {
