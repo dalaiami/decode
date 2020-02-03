@@ -40,6 +40,11 @@ html, body {
   color: white;
 }
 
+.topnav a:active {
+  background-color: blue;
+  color: white;
+}
+
 .topnav .icon {
   display: none;
 }
