@@ -10,8 +10,8 @@ html, body {
   top: 10px;
   margin: 0px auto;
   width: 70px;
-  border: solid black;
-  border-radius: 20px;
+  /* border: solid black;
+  border-radius: 20px; */
 }
 
 .topnav {
