@@ -95,14 +95,11 @@ a:hover, a:active {
   padding: 10px;
   height: 50px;
   font-size: 20px;
-  color: black;
+  color: blue;
   text-transform: uppercase;
   text-align: center;
 }
 
-#loop:hover {
-  background: blue;
-}
 
 #loop>a {
   color: black;
@@ -110,7 +107,7 @@ a:hover, a:active {
 }
 
 #loop>a:hover, a:visited {
-  color: gray;
+  color: black;
 }
 
 h1 {
