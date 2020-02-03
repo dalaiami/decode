@@ -11,6 +11,8 @@ html, body {
   margin: 0px auto;
   width: 70px;
   height: 35px;
+  border: solid black;
+  border-radius: 20px;
 }
 
 .topnav {
