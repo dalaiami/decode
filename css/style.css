@@ -103,6 +103,7 @@ a:hover, a:active {
 
 #loop>a {
   color: black;
+  padding-bottom: 10px;
 }
 
 #loop>a:hover, a:visited {
