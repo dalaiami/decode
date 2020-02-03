@@ -97,7 +97,8 @@ a:hover, a:active {
   font-size: 20px;
   letter-spacing: 3px;
   color: black;
-  text-transform: uppercase:
+  text-transform: uppercase;
+  text-align: center;
 }
 
 #loop>a {
