@@ -77,8 +77,12 @@ a:hover, a:active {
   padding-bottom: 10px;
 }
 
-#loop> p>a:hover, a:visited {
+#loop> p>a:hover {
   color: white;
+}
+
+#loop a:visited {
+  color: black
 }
 
 h1 {
