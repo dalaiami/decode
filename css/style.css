@@ -11,8 +11,6 @@ html, body {
   margin: 0px auto;
   width: 70px;
   height: 50px;
-  /* border: solid black;
-  border-radius: 20px; */
 }
 
 .topnav {
@@ -203,11 +201,12 @@ footer {
   }
 
   #loop {
-    position: sticky;
+    display: none;
+    /* position: sticky;
     bottom: 30px;
     right: 0px;
     width: 20%;
-    height: 20%;
+    height: 20%; */
   }
 
   footer {
