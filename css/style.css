@@ -35,47 +35,13 @@ html, body {
   font-size: 14px;
 }
 
-.topnav a:hover {
-  background-color: blue;
-  color: white;
-}
-
-.topnav a:active {
+.topnav a:hover , .topnav a:active {
   background-color: blue;
   color: white;
 }
 
 .topnav .icon {
   display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(last-child) {
-    display: none;
-  }
-
-  .topnav a.icon {
-    float: left;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
-    position: relative;
-  }
-
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
 }
 
 a:link, a:visited {
@@ -211,11 +177,37 @@ footer {
     height: 70%;
   }
 
+  .topnav a:not(last-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: left;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
   #loop {
     position: sticky;
     bottom: 30px;
     right: 0px;
     width: 20%;
+    height: 20%;
   }
 
   footer {
