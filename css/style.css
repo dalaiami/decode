@@ -52,7 +52,7 @@ a:hover, a:active {
   text-decoration: none
 }
 
-#loop {
+#loop {{
   position: fixed;
   top: 80px;
   right: 0px;
@@ -83,6 +83,7 @@ a:hover, a:active {
 
 #loop > p > a:visited {
   color: blue;
+}
 }
 
 h1 {
