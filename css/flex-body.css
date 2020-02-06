@@ -58,6 +58,11 @@ body {
   font-size: 30px;
   color: black;
 }
+.flex-container>div>p>a:hover {
+  background: blue;
+  color: white;
+}
+
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 720px) {
