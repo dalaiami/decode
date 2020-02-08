@@ -1,6 +1,5 @@
 body {
-  font-family: sans-serif, "helvetica";
-  font: helvetica;
+  font-family: "helvetica" , sans-serif;
   font-size: 15px;
   line-height: 35px;
   width: 80%;
@@ -21,6 +20,7 @@ body {
   width: 600px;
   height: 350px;
   margin: 20px auto;
+  padding: 20px;
   text-align: center;
   line-height: 15px;
   font-size: 25px;
@@ -30,9 +30,10 @@ body {
   background-color: transparent;
   width: 150px;
   height: 75px;
-  margin: 10px auto;
+  margin: 20px auto;
   text-align: center;
   line-height: 50px;
+  letter-spacing: 3px;
   font-size: 22px;
   color: black;
 }
@@ -41,7 +42,7 @@ body {
   background-color: white;
   align-content: left;
   line-height: 25px;
-  letter-spacing: 0px;
+  letter-spacing: 1px;
   font-size: 15px;
   color: black;
 }

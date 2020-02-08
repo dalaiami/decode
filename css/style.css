@@ -8,9 +8,6 @@ html, body {
   position: absolute;
   left: 10px;
   top: 10px;
-  margin: 0px auto;
-  width: 70px;
-  height: 50px;
 }
 
 .topnav {
@@ -56,33 +53,18 @@ a:hover, a:active {
   position: fixed;
   top: 80px;
   right: 0px;
-  background-color: blue;
+  background: white;
   border: solid black;
-  border-radius: 20px;
-  align-content: center;
+  border-radius: 100px;
   margin: 10px;
   padding: 10px;
-  line-height: 50px;
-  font-size: 50px;
-  color: blue;
-  text-align: center;
+  height: 20px;
+  width: 20px;
+  animation: slide 4s ease;
 }
 
 #loop:hover {
   background: blue;
-}
-
-#loop > p > a {
-  color: black;
-  padding-bottom: 10px;
-}
-
-#loop> p > a:hover {
-  color: white;
-}
-
-#loop > p > a:visited {
-  color: blue;
 }
 
 h1 {
@@ -174,8 +156,13 @@ footer {
   width: 15px
 }
 
+@keyframes slide {
+    0% {transform:translateX(5vw);}
+    100% {transform:translateX(0vw);}
+}
+
 @media screen and (max-width: 600px) {
-  #logo {
+  #logo img {
     height: 70%;
   }
 
@@ -202,15 +189,6 @@ footer {
     float: none;
     display: block;
     text-align: left;
-  }
-
-  #loop {
-    display: none;
-    /* position: sticky;
-    bottom: 30px;
-    right: 0px;
-    width: 20%;
-    height: 20%; */
   }
 
   footer {
