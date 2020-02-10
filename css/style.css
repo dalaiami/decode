@@ -6,12 +6,12 @@ html, body {
 
 #logo {
   position: absolute;
-  left: 10px;
+  left: 15px;
   top: 10px;
 }
 
 #logo img {
-  height: 120px;
+  height: 111px;
 }
 
 .topnav {
