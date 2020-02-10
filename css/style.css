@@ -14,6 +14,10 @@ html, body {
   height: 111px;
 }
 
+#logo img:hover {
+  animation: grow 4s ease;
+}
+
 .topnav {
   overflow: hidden;
   background-color: white;
@@ -163,6 +167,10 @@ footer {
 @keyframes slide {
     0% {transform:translateX(5vw);}
     100% {transform:translateX(0vw);}
+}
+@keyframes grow {
+    0% {transform:scale(1);}
+    100% {transform:scale(15);;}
 }
 
 @media screen and (max-width: 600px) {
