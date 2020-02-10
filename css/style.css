@@ -10,6 +10,10 @@ html, body {
   top: 10px;
 }
 
+#logo img {
+  height: 120px;
+}
+
 .topnav {
   overflow: hidden;
   background-color: white;
