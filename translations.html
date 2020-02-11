@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <title>Translations</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flex-body.css">
   <link rel="shortcut icon" href="images/circle3.png">
   <style>
+  body {
+    font-family: "helvetica" , sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    width: 85%;
+    margin: 0 auto;
+  }
     .flex-container {
       display: flex;
       flex-direction: column;
@@ -27,12 +33,25 @@
 
     .flex-container>div {
       background-color: white;
-      width: 500px;
+      width: 400px;
       height: 350px;
       margin: 50px auto;
+      padding: 20px;
       text-align: center;
       line-height: 15px;
       font-size: 15px;
+    }
+
+    .flex-container>h1 {
+      margin: 20px auto;
+      letter-spacing: 3px;
+      font-size: 43px;
+      text-transform: uppercase;
+      color: white;
+      background: black;
+      padding: 20px;
+      border: solid black;
+      border-radius: 100px;
     }
 
     .flex-container>p {
@@ -50,6 +69,11 @@
       font-size: 30px;
       color: black;
       display: inline;
+    }
+
+    .flex-container>div>p>a:hover {
+      background: blue;
+      color: white;
     }
 
     .space {
@@ -70,6 +94,10 @@
       .flex-container>div {
         width: 95%;
 
+      }
+
+      .flex-container>div>p>a {
+        margin-left: 20px;
       }
 
       .flex-container>img {
@@ -139,10 +167,10 @@
 </div>
 <div class="flex-container2">
   <div class="flex-container">
-    <p><img src="images/3d/prints/3droof.jpg" width="350" /></p>
+    <p><img src="images/3d/digital/roof.gif" width="350" /></p>
   </div>
   <div class="flex-container">
-    <p><img src="images/3d/prints/3dfence.jpg" width="350" /></p>
+    <p><img src="images/3d/digital/fencesplit.gif" width="350" /></p>
   </div>
 </div>
 <div class="flex-container2">
@@ -162,18 +190,18 @@
 </div>
 <div class="flex-container2">
   <div class="flex-container">
-    <p><img src="images/3d/prints/3dgarage.jpg" width="350" /></p>
+    <p><img src="images/3d/digital/garage.gif" width="350" /></p>
   </div>
   <div class="flex-container">
-    <p><img src="images/3d/prints/3dlight.jpg" width="350" /></p>
+    <p><img src="images/3d/digital/ceilinglight.gif" width="350" /></p>
   </div>
 </div>
 <div class="flex-container2">
   <div class="flex-container">
-    <p><img src="images/3d/prints/3dsign.jpg" width="350" /></p>
+    <p><img src="images/3d/digital/sign.gif" width="350" /></p>
   </div>
   <div class="flex-container">
-    <p><img src="images/3d/prints/3dgrate.jpg" width="350" /></p>
+    <p><img src="images/3d/digital/gate.gif" width="350" /></p>
   </div>
 </div>
 <div class="flex-container2">
@@ -204,8 +232,7 @@
 <footer>
   <div id="address">
     <a href="index.html">D-Code</a>
-    <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
-    <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
+    <p><a href="https://www.google.com/maps/" target=_blank>online - in the world</a></p>
     <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
   </div>
   <div id="other">
@@ -223,7 +250,7 @@
       <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
     </p>
   </div>
-  <div id="top-button"><a href="#top"><img src="images/smile.png" height="20px" /></a></div>
+  <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
   <div class="space"></div>
 
 </footer>

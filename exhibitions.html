@@ -5,9 +5,86 @@
   <meta charset="UTF-8">
   <title>Exhibitions</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/flex-body.css">
   <link rel="shortcut icon" href="images/circle3.png">
   <style>
+  body {
+    font-family: "helvetica" , sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h4 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: white;
+    background: black;
+    padding: 10px;
+    border-radius: 100px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+  }
+
+  .flex-container>div {
+    background-color: transparent;
+    width: 400px;
+    height: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 15px;
+    font-size: 25px;
+  }
+
+  .flex-container>h1 {
+    background-color: transparent;
+    width: 150px;
+    height: 75px;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 3px;
+    font-size: 22px;
+    color: black;
+  }
+
+  .flex-container>div>p {
+    background-color: white;
+    align-content: left;
+    line-height: 25px;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: black;
+  }
+
+  .flex-container>div>p>a:hover {
+    background: blue;
+    color: white;
+  }
+
+
+  /* RESPONSIVE MEDIA QUERIES */
+  @media screen and (max-width: 720px) {
+    .flex-container {
+      flex-direction: column;
+    }
+
+    .flex-container>div {
+      width: 95%;
+    }
+
+    .flex-container>div>p>a {
+      margin-left: 20px;
+    }
+  }
     .space {
       height: 100px;
     }
@@ -45,67 +122,92 @@
     <div><a href="translations.html"><img src="images/posters/translations2.jpg" width="300px" /></a></div>
     <div>
     <a href="translations.html">
-        <h4>Translations</h4>
-        <img src="images/descriptions/translations.jpg" /></a>
+        <h4>Translations</h4></a>
+        <p>A visual conversation between artist and computer. The translation of images to and from 3D. Using depth maps and the human eye to catalog and archive noteworthy sights.
+</p>
       </div>
   </div>
   <div class="flex-container">
     <h1>Current Exhibitions</h1>
     <div>
+      <div class="poster">
       <p><img src="images/posters/stickers3.jpg" width="230px"></p>
+      </div>
       <p>Meta</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/rgb.jpg" width="230px"></p>
+      </div>
       <p>RGB CMYK</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/smeared1.jpg" width="230px"></p>
+      </div>
       <p>Scanned</p>
     </div>
   </div>
   <div class="flex-container">
     <h1>Upcoming Exhibitions</h1>
     <div>
+      <div class="poster">
       <p><img src="images/posters/lorem.jpg" width="230px"></p>
+      </div>
       <p>Lorem Ipsum</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/error1.jpg" width="230px"></p>
+      </div>
       <p>Error</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/grid.jpg" width="230px"></p>
+      </div>
       <p>The Grid</p>
     </div>
   </div>
   <div class="flex-container">
     <h1>Ongoing Exhibitions</h1>
     <div>
+      <div class="poster">
       <p><img src="images/posters/bp4.jpg" width="230px"></p>
+      </div>
       <p>Post-Internet</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/kermitzoom.jpg" width="230px"></p>
+      </div>
       <p>Moving Document</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/spam4.jpg" width="230px"></p>
+      </div>
       <p>Digital Pop</p>
     </div>
   </div>
   <div class="flex-container">
     <h1>Past Exhibitions</h1>
     <div>
+      <div class="poster">
       <p><img src="images/posters/decode1.jpg" width="230px"></p>
+      </div>
       <p>Decode</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/thankyou1.jpg" width="230px"></p>
+      </div>
       <p>Thank You</p>
     </div>
     <div>
+      <div class="poster">
       <p><img src="images/posters/lightson.jpg" width="230px"></p>
+      </div>
       <p>Moiré</p>
     </div>
   </div>
@@ -137,7 +239,7 @@
       <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
     </p>
   </div>
-  <div id="top-button"><a href="#top"><img src="images/smile.png" height="20px" /></a></div>
+  <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
   <div class="space"></div>
 
 </footer>
