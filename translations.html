@@ -14,10 +14,16 @@
     width: 85%;
     margin: 0 auto;
   }
+    .filters  {
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
     .flex-container {
       display: flex;
       flex-direction: column;
-      background-color: white;
+      background-color: transparent;
       align-items: center;
       text-align: center;
       padding: 30px;
@@ -26,13 +32,13 @@
     .flex-container2 {
       display: flex;
       flex-direction: row;
-      background-color: white;
+      background-color: transparent;
       align-items: center;
       padding: 15px;
     }
 
     .flex-container>div {
-      background-color: white;
+      background-color: transparent;
       width: 400px;
       height: 350px;
       margin: 50px auto;
@@ -48,9 +54,8 @@
       font-size: 43px;
       text-transform: uppercase;
       color: white;
-      background: black;
+      background: lightgray;
       padding: 20px;
-      border: solid black;
       border-radius: 100px;
     }
 
@@ -76,6 +81,19 @@
       color: white;
     }
 
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto;
+      background-color: transparent;
+      margin: 20px auto;
+      padding: 25px;
+    }
+    .grid-item {
+      background-color: transparent;
+      padding: 10px;
+      align-content: space-around;
+    }
+
     .space {
       height: 100px;
     }
@@ -97,12 +115,16 @@
       }
 
       .flex-container>div>p>a {
-        margin-left: 20px;
+        margin-left: 10px;
       }
 
       .flex-container>img {
         height: 80%;
         width: 80%;
+      }
+
+      .grid-container {
+        display: inline;
       }
 
       p>img {
@@ -143,82 +165,26 @@
   </div>
   <div class="flex-container">
     <p>
-      show description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <a htef="http://instagram.com/dcodegallery" target="_blank">occaecat</a> cupidatat non proident, sunt in culpa qui
-      officia deserunt mollit anim id est laborum.
-    </p>
-    <p><a href="exhibitions.html">Other Programming</a></p>
+      A visual conversation between artist and computer. The translation of images to and from 3D. Using depth maps and the human eye to catalog and archive noteworthy sights.</p>
   </div>
 </div>
-<div class="flex-container2">
-  <div class="flex-container">
-    <p>
-      show description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore <a htef="http://instagram.com/dcodegallery" target="_blank">magna aliqua</a>. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+<div class="grid-container" >
+  <div class="grid-item"><img src="images/3d/prints/3droof.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dlight.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dgarage.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dconebases.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dstickpoke.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dfence.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dtruck.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dgrate.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dlock.jpg" width="150"/></div>
+    <div class="grid-item"><img src="images/3d/prints/3dsign.jpg" width="150"/></div>
   </div>
-  <div class="flex-container">
-    <div>
-      <p><img src="images/3d/banners/bannerbacksign.jpg" width="260px"></p>
-      <p>a fabric banner print of a 3d modeled photo of a sign</p>
+      <p class="filters"><a href="http://instagram.com/dcodegallery" target="_blank">Try the filter</a></p>
     </div>
-  </div>
-</div>
-<div class="flex-container2">
-  <div class="flex-container">
-    <p><img src="images/3d/digital/roof.gif" width="350" /></p>
-  </div>
-  <div class="flex-container">
-    <p><img src="images/3d/digital/fencesplit.gif" width="350" /></p>
-  </div>
-</div>
-<div class="flex-container2">
-  <div class="flex-container">
-    <p>
-      show description: Lorem ipsum dolor sit amet, consectetur adipiscing <a htef="http://instagram.com/dcodegallery" target="_blank">elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="flex-container">
-    <div>
-      <p><img src="images/3d/banners/bannerduct.jpg" width="260px"></p>
-      <p>a fabric baner print of a 3d modeled photo of a duct</p>
-    </div>
-  </div>
-</div>
-<div class="flex-container2">
-  <div class="flex-container">
-    <p><img src="images/3d/digital/garage.gif" width="350" /></p>
-  </div>
-  <div class="flex-container">
-    <p><img src="images/3d/digital/ceilinglight.gif" width="350" /></p>
-  </div>
-</div>
-<div class="flex-container2">
-  <div class="flex-container">
-    <p><img src="images/3d/digital/sign.gif" width="350" /></p>
-  </div>
-  <div class="flex-container">
-    <p><img src="images/3d/digital/gate.gif" width="350" /></p>
-  </div>
-</div>
-<div class="flex-container2">
-  <div class="flex-container">
-    <p>
-      show description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate <a htef="http://instagram.com/dcodegallery" target="_blank">velit</a> esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-      officia deserunt mollit anim id est laborum.
-    </p>
-  </div>
-  <div class="flex-container">
-    <div>
-      <p><img src="images/3d/banners/bannertruck.jpg" width="260px"></p>
-      <p>a fabric banner print of a 3d modeled photo of a truck</p>
-    </div>
-  </div>
-</div>
+
+<div class="space"></div>
+
 <div class="flex-container">
   <div>
     <p><a href="http://instagram.com/dcodegallery" target="_blank">instagram</a></p>
