@@ -11,7 +11,7 @@
     font-family: "helvetica" , sans-serif;
     font-size: 15px;
     line-height: 25px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -83,6 +83,23 @@
     color: white;
   }
 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    padding: 5px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
   /* RESPONSIVE MEDIA QUERIES */
   @media screen and (max-width: 720px) {
@@ -92,6 +109,14 @@
 
     .flex-container>div {
       width: 95%;
+    }
+
+    a h2 {
+       font-size: 30px;
+    }
+
+    footer img {
+      height: 30px;
     }
 
   }
@@ -144,19 +169,34 @@
   <div class="flex-container">
     <div>
     <div class="poster">
+      <div class="dropdown">
       <p><img src="images/posters/stickers3.jpg" width="230px"></p>
-      </div>
+      <div class="dropdown-content">
+        <img src="images/descriptions/meta.jpg" height="300px"/>
+    </div>
+    </div>
+    </div>
       <p>Meta</p>
     </div>
     <div>
       <div class="poster">
+      <div class="dropdown">
       <p><img src="images/posters/rgb.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/rgb.jpg" height="300px"/>
+      </div>
+      </div>
       </div>
       <p>RGB CMYK</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/smeared1.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/scanned.jpg" height="300px" />
+      </div>
+    </div>
       </div>
       <p>Scanned</p>
     </div>
@@ -165,19 +205,34 @@
   <div class="flex-container">
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/lorem.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/lorem.jpg"  height="300px"/>
+      </div>
+    </div>
       </div>
       <p>Lorem Ipsum</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/error1.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/error.jpg"  height="300px"/>
+      </div>
+    </div>
       </div>
       <p>Error</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/grid.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/thegrid.jpg"  height="300px"/>
+      </div>
+    </div>
       </div>
       <p>The Grid</p>
     </div>

@@ -14,11 +14,6 @@ body {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -39,16 +34,16 @@ h2 {
   font-size: 25px;
 }
 
-.flex-container>h1 {
-  background-color: transparent;
-  width: 150px;
-  height: 75px;
+ div > h1 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: white;
+  background: lightgray;
   margin: 20px auto;
+  padding: 10px;
+  width: 200px;
   text-align: center;
-  line-height: 30px;
-  letter-spacing: 3px;
-  font-size: 22px;
-  color: black;
+  border-radius: 100px;
 }
 
 .flex-container>div>p {
@@ -76,7 +71,14 @@ h2 {
   background: blue;
   color: white;
 }
-
+ div .cart {
+   color: gray;
+   font-size: 15px;
+   margin: 10px;
+   padding: 3px;
+   border: solid thin gray;
+   border-radius: 20px;
+ }
 
 /* RESPONSIVE MEDIA QUERIES */
 @media screen and (max-width: 720px) {
@@ -90,6 +92,10 @@ h2 {
 
   .flex-container>div>p>a {
     margin-left: 20px;
+  }
+
+  footer img {
+    height: 30px;
   }
 }
 .space {
@@ -128,14 +134,17 @@ function myFunction() {
   <div><p><img src="images/shop/cd.png" height="230px"></p>
   <p>Recoding of Typing on Keyboard as Form of Morse Code</p>
   <p>$30</p>
+  <a class="cart" href="#cart">Add to Cart</a>
 </div>
    <div><p><img src="images/shop/cone.png" height="230px"></p>
   <p>Multi-use Location Beacon</p>
   <p>$50</p>
+  <a class="cart" href="#cart">Add to Cart</a>
 </div>
    <div><p><img src="images/shop/keychain.png" height="230px"></p>
   <p>Clip-on Keychain</p>
   <p>$8</p>
+  <a class="cart" href="#cart">Add to Cart</a>
   </div>
     </div>
 
@@ -143,10 +152,12 @@ function myFunction() {
   <div><p><img src="images/shop/shirt1.png" height="230px"></p>
   <p>White T-shirt</p>
   <p>$30</p>
+  <a class="cart" href="#cart">Add to Cart</a>
 </div>
    <div><p><img src="images/shop/shirt2.png" height="230px"></p>
   <p>Gray T-shirt</p>
   <p>$30</p>
+  <a class="cart" href="#cart">Add to Cart</a>
 </div>
    <div><p><img src="images/shop/question.png" height="220px"></p>
   <p>out of stock</p>

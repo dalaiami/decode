@@ -11,7 +11,7 @@
     font-family: "helvetica" , sans-serif;
     font-size: 15px;
     line-height: 25px;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
 
@@ -70,6 +70,23 @@
     color: white;
   }
 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 160px;
+    padding: 5px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
   /* RESPONSIVE MEDIA QUERIES */
   @media screen and (max-width: 720px) {
@@ -79,6 +96,14 @@
 
     .flex-container>div {
       width: 95%;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    footer img {
+      height: 30px;
     }
 
   }
@@ -115,7 +140,6 @@
   </script>
   <div class="space"></div>
   <div class="flex-container">
-    <h1>Featured <br /> Show</h1>
     <div><a href="translations.html"><img src="images/posters/translations2.jpg" width="325px" /></a></div>
     <div>
     <a href="translations.html">
@@ -123,24 +147,40 @@
         <p>A visual conversation between artist and computer. The translation of images to and from 3D. Using depth maps and the human eye to catalog and archive noteworthy sights.
 </p>
       </div>
+      <h1>Featured <br /> Show</h1>
   </div>
   <div class="flex-container">
     <h1>Current Exhibitions</h1>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/stickers3.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/meta.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Meta</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/rgb.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/rgb.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>RGB CMYK</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/smeared1.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/scanned.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Scanned</p>
     </div>
@@ -149,19 +189,34 @@
     <h1>Upcoming Exhibitions</h1>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/lorem.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/lorem.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Lorem Ipsum</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/error1.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/error.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Error</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/grid.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/thegrid.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>The Grid</p>
     </div>
@@ -170,19 +225,34 @@
     <h1>Ongoing Exhibitions</h1>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/bp4.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/postinternet.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Post-Internet</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/kermitzoom.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/movingdoc.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Moving Document</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/spam4.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/digipop.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Digital Pop</p>
     </div>
@@ -191,19 +261,34 @@
     <h1>Past Exhibitions</h1>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/decode1.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/decode.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Decode</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/thankyou1.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/thankyou.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Thank You</p>
     </div>
     <div>
       <div class="poster">
+        <div class="dropdown">
       <p><img src="images/posters/lightson.jpg" width="230px"></p>
+      <div class="dropdown-content">
+        <img src="images/descriptions/moire.jpg" height="300px"/>
+    </div>
+    </div>
       </div>
       <p>Moiré</p>
     </div>

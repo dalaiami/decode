@@ -19,7 +19,7 @@
 
     .flex-container {
       display: flex;
-      flex-direction: row;
+      flex-direction: column-reverse;
       background-color: white;
       align-items: center;
       padding: 10px;
@@ -27,13 +27,13 @@
 
     .flex-container>div {
       background-color: transparent;
-      width: 1000px;
       height: 350px;
       margin: auto;
       padding: 20px;
       text-align: center;
       line-height: 35px;
       font-size: 15px;
+      animation: slide 5s ease;
     }
 
     .flex-container>div>p>a {
@@ -53,12 +53,13 @@
       height: 100px;
     }
 
+    @keyframes slide {
+      0{transform:translateX();}
+      100%{transform:translateX();}
+    }
+
     /* RESPONSIVE MEDIA QUERIES */
     @media screen and (max-width: 720px) {
-
-      .flex-container {
-        flex-direction: column;
-      }
 
       .flex-container>div {
         width: 95%;
@@ -96,24 +97,17 @@
   </script>
   <div class="space"></div>
   <div class="space"></div>
+  <div class="flex-container">
   <div>
     <h1>New Space to Open</h1>
     <p>June 30 10am</p>
-    <p>We will meet outsite at 9:30 to districute headsets.</p>
+    <p>We will meet outsite at 9:30 to distribute headsets.</p>
   </div>
-    <div class="space"></div>
-  <div class="flex-container">
     <div>
       <h1>Visiting Artists Lectures</h1>
       <p>Hosted online on our Youtube channel as a visual podcast.</p>
       <a href="http://youtube.com/" target="_blank">here</a>
-      <p>This month's lineup is below
-        <br /><img src="" />
-        <br />feb 5
-        <br />feb 12
-        <br />feb 19
-        <br /> feb 29
-      </p>
+      <p>This month's lineup is below</p>
         </div>
       <div>
         <h1>Watch an Artist Work</h1>
@@ -132,7 +126,6 @@
       <p><a href="http://instagram.com/dcodegallery" target="_blank">instagram</a></p>
     </div>
   </div>
-  <div class="space"></div>
 </body>
 <footer>
   <div id="address">
