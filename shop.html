@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-	<title>Shop</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="shortcut icon" href="images/circle3.png">
-<style>
-body {
-  font-family: "helvetica" , sans-serif;
-  font-size: 15px;
-  line-height: 25px;
-  width: 80%;
-  margin: 0 auto;
-}
+  <meta charset="UTF-8">
+  <title>Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/circle3.png">
+  <style>
+    body {
+      font-family: "helvetica", sans-serif;
+      font-size: 18px;
+      line-height: 25px;
+      width: 80%;
+      margin: 0 auto;
+    }
 
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  background-color: transparent;
-  align-items: center;
-  margin: 20px;
-  padding: 10px;
-}
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      background: transparent;
+      align-items: center;
+      margin: 20px;
+      padding: 10px;
+    }
 
-.flex-container>div {
-  background-color: transparent;
-  width: 400px;
-  height: 350px;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-  line-height: 15px;
-  font-size: 25px;
-}
+    .flex-container>div {
+      background: transparent;
+      width: 400px;
+      height: 350px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      line-height: 15px;
+      font-size: 25px;
+    }
 
- div > h1 {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  color: white;
-  background: lightgray;
-  margin: 20px auto;
-  padding: 10px;
-  width: 200px;
-  text-align: center;
-  border-radius: 100px;
-}
+    div>h1 {
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: white;
+      background: lightgray;
+      margin: 20px auto;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+      border-radius: 100px;
+    }
 
-.flex-container>div>p {
-  background-color: white;
-  align-content: left;
-  line-height: 25px;
-  letter-spacing: 1px;
-  font-size: 15px;
-  color: black;
-}
+    .flex-container>div>p {
+      background: transparent;
+      align-content: left;
+      line-height: 25px;
+      letter-spacing: 1px;
+      font-size: 15px;
+      color: black;
+    }
 
-.flex-container>div>p>a {
-  background-color: white;
-  border: solid black;
-  border-radius: 30px;
-  align-content: center;
-  margin: 10px;
-  padding: 10px;
-  line-height: 50px;
-  letter-spacing: 3px;
-  font-size: 30px;
-  color: black;
-}
-.flex-container>div>p>a:hover {
-  background: blue;
-  color: white;
-}
- div .cart {
-   color: gray;
-   font-size: 15px;
-   margin: 10px;
-   padding: 3px;
-   border: solid thin gray;
-   border-radius: 20px;
- }
+    .flex-container>div>p>a {
+      background-color: white;
+      border: solid black;
+      border-radius: 30px;
+      align-content: center;
+      margin: 10px;
+      padding: 10px;
+      line-height: 50px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      color: black;
+    }
 
-/* RESPONSIVE MEDIA QUERIES */
-@media screen and (max-width: 720px) {
-  .flex-container {
-    flex-direction: column;
-  }
+    .flex-container>div>p>a:hover {
+      background: blue;
+      border: blue;
+      color: white;
+      transition:  1s;
+    }
 
-  .flex-container>div {
-    width: 95%;
-  }
+    .shop {
+      margin-top: 25px;
+    }
 
-  .flex-container>div>p>a {
-    margin-left: 20px;
-  }
+    .shop:hover {
+      background: whitesmoke;
+      border-radius: 20px;
+    }
 
-  footer img {
-    height: 30px;
-  }
-}
-.space {
-  height: 100px;
-}
-</style>
+    div .cart {
+      color: gray;
+      font-size: 15px;
+      margin: 10px;
+      padding: 3px;
+      border: solid thin gray;
+      border-radius: 20px;
+    }
+
+    div .cart:hover {
+      background: white;
+      color: black;
+      border-color: black;
+    }
+
+        .space {
+          height: 100px;
+        }
+
+        .space2 {
+          height: 15px;
+        }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 720px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .flex-container>div {
+        width: 95%;
+      }
+
+      .flex-container>div>p>a {
+        margin-left: 20px;
+      }
+
+      footer img {
+        height: 30px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
-  <a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
+  <a href="index.html">
+    <div id="logo"><img src="images/logo2.png"></div>
+  </a>
   <div class="topnav" id="myTopnav">
     <!--  <a href="index.php">Home</a>        -->
     <a href="plan.html">Plan Your Visit</a>
@@ -118,85 +147,101 @@ body {
   </div>
 
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+      } else {
         x.className = "topnav";
+      }
     }
-}
-</script>
-<div class="space"></div>
-  <div><h1>Shop</h1></div>
-<div class="flex-container">
-  <div><p><img src="images/shop/cd.png" height="230px"></p>
-  <p>Recoding of Typing on Keyboard as Form of Morse Code</p>
-  <p>$30</p>
-  <a class="cart" href="#cart">Add to Cart</a>
-</div>
-   <div><p><img src="images/shop/cone.png" height="230px"></p>
-  <p>Multi-use Location Beacon</p>
-  <p>$50</p>
-  <a class="cart" href="#cart">Add to Cart</a>
-</div>
-   <div><p><img src="images/shop/keychain.png" height="230px"></p>
-  <p>Clip-on Keychain</p>
-  <p>$8</p>
-  <a class="cart" href="#cart">Add to Cart</a>
+  </script>
+  <div class="space"></div>
+  <div class="shop">
+      <div class="space2"></div>
+    <div>
+      <h1>Shop</h1>
+    </div>
+    <div class="flex-container">
+      <div>
+        <p><img src="images/shop/cd.png" height="230px"></p>
+        <p>Recoding of Typing on Keyboard as Form of Morse Code</p>
+        <p>$30</p>
+        <a class="cart" href="#cart">Add to Cart</a>
+      </div>
+      <div>
+        <p><img src="images/shop/cone.png" height="230px"></p>
+        <p>Multi-use Location Beacon</p>
+        <p>$50</p>
+        <a class="cart" href="#cart">Add to Cart</a>
+      </div>
+      <div>
+        <p><img src="images/shop/keychain.png" height="230px"></p>
+        <p>Clip-on Keychain</p>
+        <p>$8</p>
+        <a class="cart" href="#cart">Add to Cart</a>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div>
+        <p><img src="images/shop/shirt1.png" height="230px"></p>
+        <p>White T-shirt</p>
+        <p>$30</p>
+        <a class="cart" href="#cart">Add to Cart</a>
+      </div>
+      <div>
+        <p><img src="images/shop/shirt2.png" height="230px"></p>
+        <p>Gray T-shirt</p>
+        <p>$30</p>
+        <a class="cart" href="#cart">Add to Cart</a>
+      </div>
+      <div>
+        <p><img src="images/shop/question.png" height="220px"></p>
+        <p>out of stock</p>
+        <p>n/a</p>
+      </div>
+    </div>
   </div>
-    </div>
+  <div class="space"></div>
 
-<div class="flex-container">
-  <div><p><img src="images/shop/shirt1.png" height="230px"></p>
-  <p>White T-shirt</p>
-  <p>$30</p>
-  <a class="cart" href="#cart">Add to Cart</a>
-</div>
-   <div><p><img src="images/shop/shirt2.png" height="230px"></p>
-  <p>Gray T-shirt</p>
-  <p>$30</p>
-  <a class="cart" href="#cart">Add to Cart</a>
-</div>
-   <div><p><img src="images/shop/question.png" height="220px"></p>
-  <p>out of stock</p>
-  <p>n/a</p>
-</div>
+  <div class="flex-container">
+    <div>
+      <p><a href="cart.html">cart</a></p>
     </div>
-    <div class="space"></div>
+  </div>
 
-<div class="flex-container">
-      <div><p><a href="cart.html">cart</a></p></div>
-    </div>
+  <a href="newsletter.html">
+    <div id="loop"></div>
+  </a>
 
-    <a href="newsletter.html"><div id="loop"></div></a>
+</body>
+<footer>
+  <div id="address">
+    <a href="index.html">D-Code</a>
+    <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
+    <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
+    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
+  </div>
+  <div id="other">
+    <p>Useful Links</p>
+    <p>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </p>
+  </div>
+  <div id="social">
+    <p>Socials</p>
+    <p>
+      <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
+      <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
+    </p>
+  </div>
+  <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
+  <div class="space"></div>
 
-  </body>
-  <footer>
-    <div id="address">
-      <a href="index.html">D-Code</a>
-      <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
-      <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
-      <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
-    </div>
-    <div id="other">
-      <p>Useful Links</p>
-      <p>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </p>
-    </div>
-    <div id="social">
-      <p>Socials</p>
-      <p>
-        <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
-        <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
-      </p>
-    </div>
-      <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
-      <div class="space"></div>
+</footer>
 
-  </footer>
 </html>

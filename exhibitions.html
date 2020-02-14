@@ -9,7 +9,7 @@
   <style>
   body {
     font-family: "helvetica" , sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 25px;
     width: 90%;
     margin: 0 auto;
@@ -24,6 +24,18 @@
     border-radius: 100px;
   }
 
+  a h4:hover {
+    color: white;
+    background: gray;
+    padding: 20px;
+    border-radius: 100px;
+    transition: 1s;
+  }
+
+  .feat:hover {
+    animation: grow 4s ease;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;
@@ -34,9 +46,9 @@
   }
 
   .flex-container>div {
-    background-color: transparent;
+    background: transparent;
     width: 400px;
-    height: 350px;
+    height: 400px;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
@@ -44,8 +56,13 @@
     font-size: 25px;
   }
 
+  .flex-container:hover {
+    background: whitesmoke;
+    border-radius: 20px;
+  }
+
   .flex-container>h1 {
-    background-color: transparent;
+    background: transparent;
     width: 150px;
     height: 75px;
     margin: 20px auto;
@@ -57,28 +74,24 @@
   }
 
   .flex-container>div>p {
-    background-color: white;
+    background: transparent;
+    padding: 10px;
     align-content: left;
-    line-height: 25px;
+    line-height: 40px;
     letter-spacing: 1px;
     font-size: 15px;
     color: black;
   }
 
-  .flex-container>div>p>a:hover {
-    background: blue;
-    color: white;
-  }
-
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background: transparent;
     min-width: 160px;
     padding: 5px;
     z-index: 1;
@@ -86,6 +99,15 @@
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+  .dropdown:hover p>img {
+        background: transparent;
+  }
+
+  @keyframes grow {
+      0% {transform:scale(1);}
+      100% {transform:scale(1.3);}
   }
 
   /* RESPONSIVE MEDIA QUERIES */
@@ -96,6 +118,18 @@
 
     .flex-container>div {
       width: 95%;
+    }
+
+    .feat:hover {
+      animation: none;
+    }
+
+    .feat a img {
+      width: 90%;
+    }
+
+    div:hover {
+      background: transparent;
     }
 
     h1 {
@@ -140,15 +174,16 @@
   </script>
   <div class="space"></div>
   <div class="flex-container">
-    <div><a href="translations.html"><img src="images/posters/translations2.jpg" width="325px" /></a></div>
+    <h1>Featured <br /> Show</h1>
+    <div class="feat"><a href="translations.html"><img src="images/posters/translations2.jpg" height="400px" /></a></div>
     <div>
     <a href="translations.html">
         <h4>Translations</h4></a>
         <p>A visual conversation between artist and computer. The translation of images to and from 3D. Using depth maps and the human eye to catalog and archive noteworthy sights.
 </p>
       </div>
-      <h1>Featured <br /> Show</h1>
   </div>
+    <div class="space"></div>
   <div class="flex-container">
     <h1>Current Exhibitions</h1>
     <div>
@@ -156,7 +191,7 @@
         <div class="dropdown">
       <p><img src="images/posters/stickers3.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/meta.jpg" height="300px"/>
+        <img src="images/descriptions/meta.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -167,7 +202,7 @@
         <div class="dropdown">
       <p><img src="images/posters/rgb.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/rgb.jpg" height="300px"/>
+        <img src="images/descriptions/rgb.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -178,7 +213,7 @@
         <div class="dropdown">
       <p><img src="images/posters/smeared1.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/scanned.jpg" height="300px"/>
+        <img src="images/descriptions/scanned.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -192,7 +227,7 @@
         <div class="dropdown">
       <p><img src="images/posters/lorem.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/lorem.jpg" height="300px"/>
+        <img src="images/descriptions/lorem.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -203,7 +238,7 @@
         <div class="dropdown">
       <p><img src="images/posters/error1.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/error.jpg" height="300px"/>
+        <img src="images/descriptions/error.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -214,7 +249,7 @@
         <div class="dropdown">
       <p><img src="images/posters/grid.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/thegrid.jpg" height="300px"/>
+        <img src="images/descriptions/thegrid.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -228,7 +263,7 @@
         <div class="dropdown">
       <p><img src="images/posters/bp4.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/postinternet.jpg" height="300px"/>
+        <img src="images/descriptions/postinternet.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -239,7 +274,7 @@
         <div class="dropdown">
       <p><img src="images/posters/kermitzoom.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/movingdoc.jpg" height="300px"/>
+        <img src="images/descriptions/movingdoc.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -250,7 +285,7 @@
         <div class="dropdown">
       <p><img src="images/posters/spam4.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/digipop.jpg" height="300px"/>
+        <img src="images/descriptions/digipop.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -264,7 +299,7 @@
         <div class="dropdown">
       <p><img src="images/posters/decode1.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/decode.jpg" height="300px"/>
+        <img src="images/descriptions/decode.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -275,7 +310,7 @@
         <div class="dropdown">
       <p><img src="images/posters/thankyou1.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/thankyou.jpg" height="300px"/>
+        <img src="images/descriptions/thankyou.png" width="400px"/>
     </div>
     </div>
       </div>
@@ -286,7 +321,7 @@
         <div class="dropdown">
       <p><img src="images/posters/lightson.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/moire.jpg" height="300px"/>
+        <img src="images/descriptions/moire.png" width="400px"/>
     </div>
     </div>
       </div>

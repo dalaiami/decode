@@ -38,10 +38,16 @@ html, body {
   font-size: 14px;
 }
 
-.topnav a:hover , .topnav a:active {
-  background-color: blue;
-  color: white;
-}
+.topnav a:hover {
+    background: blue;
+    color: white;
+    transition:  1s;
+  }
+
+  .topnav a:active {
+      background: blue;
+      color: white;
+    }
 
 .topnav .icon {
   display: none;
@@ -73,6 +79,8 @@ a:hover, a:active {
 
 #loop:hover {
   background: blue;
+  border-color: blue;
+  transition:  1s;
 }
 
 h1 {
@@ -192,7 +200,7 @@ footer {
   }
 
   .topnav.responsive .icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }

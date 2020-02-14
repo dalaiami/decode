@@ -10,7 +10,7 @@
     body {
       font-family: sans-serif, "helvetica";
       font: helvetica;
-      font-size: 15px;
+      font-size: 18px;
       line-height: 24px;
       width: 90%;
       margin: 0 auto;
@@ -20,6 +20,7 @@
 
     h4{
       text-align: left;
+      font-size: 20px;
     }
 
     .flex-container {
@@ -32,25 +33,27 @@
     .flex-container2 {
       display: flex;
       flex-direction: row;
-      background-color: white;
+      background: whitesmoke;
+      border-radius: 20px;
       align-items: center;
+      padding: 20px;
     }
 
     .flex-container2>div {
-      background-color: white;
+      background: transparent;
       align-items: center;
       text-align: justify;
       padding-right: 20px;
     }
 
     .flex-container2 > div > img {
-      background-color: white;
+      background: transparent;
       align-items: center;
       text-align: center;
     }
 
     .flex-container>div {
-      background-color: white;
+      background: transparent;
       width: 500px;
       height: 350px;
       margin: 50px auto;
@@ -72,11 +75,18 @@
       color: black;
     }
 
-    .flex-container>.videos {
+    .flex-container>div>p>a:hover {
+      background: blue;
+      border: blue;
+      color: white;
+      transition:  1s;
+    }
+
+    /* .flex-container>.videos {
       padding: 20px;
       margin: 10px 10px;
       align-content: center;
-    }
+    } */
 
     .space {
       background: white;
@@ -88,6 +98,11 @@
       background: white;
       height: 25px;
       position: center middle no-repeat;
+    }
+
+    @keyframes slide {
+        0% {transform:translateX(5vw);}
+        100% {transform:translateX(0vw);}
     }
 
     /* RESPONSIVE MEDIA QUERIES */
@@ -115,7 +130,7 @@
         height: 30px;
       }
 
-      video {
+      iframe {
         display: none;
       }
 
@@ -156,7 +171,7 @@
   </script>
   <div class="space"></div>
   <div class="flex-container2">
-    <div>
+    <div class="about">
       <h4>Who We Are</h4>
       <p>D-Code was founded in May 2019, on the premise of making a virtual and adaptive space to showcase the work of contemporary artists. D-Code's mission is to present exceptional new art. D-Code is committed to providing opportunities for artistic innovation for emerging and established artists and to expanding the understanding and appreciation of new art for the public. D-Code exhibits a broad range of contemporary art in a variety of media, including paintings, drawings, sculpture, photography, glass, ceramics and limited edition prints, with emphasis on emerging technology and new photographic applications. </p>
       <h4>Mission</h4>
@@ -168,20 +183,16 @@
         flourishing artistic culture while bolstering the community toward a global discourse surrounding cultural production.</p>
       <h4>The Space</h4>
       <p>The largest of the contemporary galleries, D-Code provides more than 6600 square feet of interior space, and infinite square footage online. The modeled building dates from the 1930’s and was used as a garage before the current refurbishment.
-        The building's interior is divided into four main spaces – the first space, an open space in the form of a long hallway, is the largest and is a mix of public and private space, with a large reception area. The second space, with a long
-        corridor, is a smaller space with smaller seating areas and a private work area. The third space is a smaller space with fewer seating areas and is used by D-Code for office use. The fourth space, a small space with three seating areas, is
-        for
-        private study use.
-        The public area, with an open space in the form of a long hall, accommodates the general public for exhibition use, and also a larger public group which has access via a glassed-in corridor that leads to the second smaller gallery, the West
+        <p>The building's interior is divided into four main spaces – the first space, an open space in the form of a long hallway, is the largest and is a mix of public and private space, with a large reception area. The second space, with a long
+        corridor, is a smaller space with smaller seating areas and a private work area. The third space is a smaller space with fewer seating areas and is used by D-Code for office use. The fourth space, a small space with three seating areas, is for private study use.</p>
+        <p>The public area, with an open space in the form of a long hall, accommodates the general public for exhibition use, and also a larger public group which has access via a glassed-in corridor that leads to the second smaller gallery, the West
         gallery, the Library and the Hall gallery feature an innovative new program of exhibitions. Additionally, there are frequent artist talks, educational presentations and lectures.</p>
       <h4>Submission</h4>
-      <p>Artist submissions are welcomed. Submissions will be reviewed several times a year. If upon review, we have further interest, we will be in touch with you directly. Artists should include a C.V., and artist statement, along with a personal
-        web
-        address and or 5 to 10 jpeg images with captions. Submissions must be emailed to submissions@dcode.com.
-      </p>
+      <p>Artist submissions are welcomed. Submissions will be reviewed several times a year. If upon review, we have further interest, we will be in touch with you directly. Artists should include a C.V., and artist statement, along with a personal web address and or 5 to 10 jpeg images with captions.</p>
+      <p>Submissions must be emailed to submissions@dcode.com.</p>
     </div>
     <div>
-      <img src="images/building2.jpg" width="480px" align-content="center">
+      <img src="images/building2.png" width="480px" align-content="center">
     </div>
   </div>
   </div>
@@ -195,10 +206,10 @@
       <iframe width="500" height="300" src="https://www.youtube.com/embed/aIm4G7UbYK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="1168" height="300" src="https://www.youtube.com/embed/94ew8AllbPA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <iframe width="500" height="300" src="https://www.youtube.com/embed/DamhAeuEOXQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-      <!-- <iframe width="800" height="400" src="https://www.youtube.com/embed/J-GGkPLClVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-      <video width="800" height="400" preload="auto" loop muted autoplay>
+      <iframe width="800" height="400" src="https://www.youtube.com/embed/J-GGkPLClVE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <!-- <video width="800" height="400" preload="auto" loop muted autoplay>
   <source src="vids/GALLERY.mp4" type="video/mp4">
-    </video>
+    </video> -->
   <!-- </div> -->
 </div>
   <div class="space"></div>

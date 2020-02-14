@@ -9,7 +9,7 @@
   <style>
   body {
     font-family: "helvetica" , sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 25px;
     width: 90%;
     margin: 0 auto;
@@ -25,19 +25,39 @@
     border-radius: 100px;
   }
 
+  a h2:hover {
+    color: white;
+    background: gray;
+    padding: 20px;
+    border-radius: 100px;
+    transition: 1s;
+  }
+
+  .feat {
+    position: fixed;
+    right: 500px;
+    top: 80px;
+    opacity: 0;
+    animation: slide 4s ease;
+  }
+
+  .shop {
+    z-index: 1;
+  }
+
   .flex-container {
     display: flex;
     flex-direction: row;
-    background-color: transparent;
+    background: transparent;
     align-items: center;
     margin: 20px;
     padding: 10px;
   }
 
   .flex-container>div {
-    background-color: transparent;
+    background: transparent;
     width: 400px;
-    height: 350px;
+    height: 375px;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
@@ -46,10 +66,9 @@
   }
 
   h1 {
-    background-color: transparent;
+    background: transparent;
     margin: 20px auto;
     text-align: center;
-    line-height: 25px;
     letter-spacing: 3px;
     font-size: 22px;
     color: black;
@@ -58,9 +77,8 @@
   }
 
   .flex-container>div>p {
-    background-color: white;
-    align-content: left;
-    line-height: 25px;
+    background-color: transparent;
+    line-height: 40px;
     letter-spacing: 1px;
     font-size: 15px;
     color: black;
@@ -80,18 +98,20 @@
   }
   .flex-container>div>p>a:hover {
     background: blue;
+    border: blue;
     color: white;
+    transition:  1s;
   }
 
   .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: transparent;
+    background: transparent;
     min-width: 160px;
     padding: 5px;
     z-index: 1;
@@ -99,6 +119,21 @@
 
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+
+      .space {
+        height: 100px;
+      }
+
+  @keyframes slide {
+      0% {transform:translateX(90vw);
+      opacity: 1;}
+      50% {transform:translateX(0vw);
+      opacity: 1;}
+      75% {transform:translateX(0vw);
+      opacity:1;}
+      100% {transform:translateX(0vw);
+      opacity: 0;}
   }
 
   /* RESPONSIVE MEDIA QUERIES */
@@ -121,9 +156,6 @@
 
   }
 
-    .space {
-      height: 100px;
-    }
   </style>
 </head>
 
@@ -159,9 +191,12 @@
         <h2>Translations</h2></a>
         <p>A visual conversation between artist and computer. The translation of images to and from 3D. Using depth maps and the human eye to catalog and archive noteworthy sights.</p>
     </div>
-    <div>
+    <div class="feat">
       <a href="translations.html"><img src="images/posters/translations2.jpg" width="400px" /></a>
     </div>
+    <!-- <div>
+        <a href="translations.html"><img src="images/posters/translations2.jpg" width="400px" /></a>
+    </div> -->
   </div>
       <div class="space"></div>
           <div class="space"></div>
@@ -172,7 +207,7 @@
       <div class="dropdown">
       <p><img src="images/posters/stickers3.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/meta.jpg" height="300px"/>
+        <img src="images/descriptions/meta.png" width="400px"/>
     </div>
     </div>
     </div>
@@ -183,7 +218,7 @@
       <div class="dropdown">
       <p><img src="images/posters/rgb.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/rgb.jpg" height="300px"/>
+        <img src="images/descriptions/rgb.png" width="400px"/>
       </div>
       </div>
       </div>
@@ -194,7 +229,7 @@
         <div class="dropdown">
       <p><img src="images/posters/smeared1.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/scanned.jpg" height="300px" />
+        <img src="images/descriptions/scanned.png" width="400px" />
       </div>
     </div>
       </div>
@@ -208,7 +243,7 @@
         <div class="dropdown">
       <p><img src="images/posters/lorem.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/lorem.jpg"  height="300px"/>
+        <img src="images/descriptions/lorem.png"  width="400px"/>
       </div>
     </div>
       </div>
@@ -219,7 +254,7 @@
         <div class="dropdown">
       <p><img src="images/posters/error1.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/error.jpg"  height="300px"/>
+        <img src="images/descriptions/error.png"  width="400px"/>
       </div>
     </div>
       </div>
@@ -230,7 +265,7 @@
         <div class="dropdown">
       <p><img src="images/posters/grid.jpg" width="230px"></p>
       <div class="dropdown-content">
-        <img src="images/descriptions/thegrid.jpg"  height="300px"/>
+        <img src="images/descriptions/thegrid.png"  width="400px"/>
       </div>
     </div>
       </div>
@@ -240,7 +275,7 @@
   <div class="space"></div>
 
   <div class="flex-container">
-    <div>
+    <div class="shop">
       <p><a href="shop.html">shop</a></p>
     </div>
   </div>

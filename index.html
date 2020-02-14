@@ -10,7 +10,8 @@
     body {
       width: 90%;
       margin: 0px auto;
-      /* background-image: linear-gradient(white, lightgray); */
+      padding: 10px;
+      background-image: transparent;
       font-family: "helvetica", sans-serif;
       font-size: 15px;
       color: black;
@@ -21,12 +22,12 @@
     .flex-container {
       display: flex;
       flex-direction: column;
-      background-color: transparent;
+      background: transparent;
       align-items: center;
     }
 
     .flex-container>div {
-      background-color: transparent;
+      background: transparent;
       width: 950px;
       height: 350px;
       margin: 5px auto;
@@ -66,7 +67,7 @@
       margin: 45px;
       background: ;
       height: 200;
-      width: 630;
+      width: 930;
       position: center middle no-repeat;
     }
 
@@ -78,14 +79,16 @@
     }
 
     .about a:hover {
+      background: linear-gradient(white, blue);
       font-size: 70px;
+      transition: 1s;
     }
 
     .exhibitions {
       margin: 45px;
       background: ;
       height: 200;
-      width: 630;
+      width: 930;
       position: center middle no-repeat;
     }
 
@@ -97,13 +100,15 @@
     }
 
     .exhibitions a:hover {
-      font-size: 70px;
+        background: linear-gradient(white, blue);
+        font-size: 70px;
+        transition: 1s;
     }
 
     .shop {
       background: url('images/');
-      height: 200;
-      width: 630;
+      height: 300;
+      width: 930;
       position: center middle no-repeat;
     }
 
@@ -115,7 +120,9 @@
     }
 
     .shop a:hover {
-      font-size: 70px;
+        background: linear-gradient(white, blue);
+        font-size: 70px;
+        transition: 1s;
     }
 
     /* RESPONSIVE MEDIA QUERIES */
