@@ -178,7 +178,7 @@ footer {
 }
 @keyframes grow {
     0% {transform:scale(1);}
-    100% {transform:scale(5);}
+    100% {transform:scale(6);}
 }
 
 @media screen and (max-width: 600px) {
