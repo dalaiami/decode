@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <title>The Loop</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/circle3.png">
+  <script src="js/scripts.js"></script>
   <style>
     body {
       font-family: sans-serif, "helvetica";
@@ -83,23 +85,35 @@
       font-size: 30px;
       color: black;
     }
-    .flex-container>div>p>a:hover  {
-    background: blue;
-    border: blue;
-    color: white;
-    transition: 1s;
-  }
+
+    .flex-container>div>p>a:hover {
+      background: blue;
+      border: blue;
+      color: white;
+      transition: 1s;
+    }
+
     .space {
       height: 100px;
     }
 
     @keyframes slide {
-      0{transform:translateX();}
-      100%{transform:translateX();}
+      0 {
+        transform: translateX();
+      }
+
+      100% {
+        transform: translateX();
+      }
     }
 
-    ul {list-style-type: none;}
-    body {font-family: helvetica, sans-serif;}
+    ul {
+      list-style-type: none;
+    }
+
+    body {
+      font-family: helvetica, sans-serif;
+    }
 
     /* Month header */
     .month {
@@ -138,7 +152,7 @@
     .weekdays {
       margin: 0;
       padding: 15px 5px;
-      background-color:#ddd;
+      background-color: #ddd;
     }
 
     .weekdays li {
@@ -161,7 +175,7 @@
       width: 13.6%;
       text-align: center;
       margin-bottom: 5px;
-      font-size:12px;
+      font-size: 12px;
       color: #777;
     }
 
@@ -176,7 +190,8 @@
     /* RESPONSIVE MEDIA QUERIES */
     @media screen and (max-width: 720px) {
 
-      .flex-container , .flex-container2 {
+      .flex-container,
+      .flex-container2 {
         flex-direction: column;
       }
 
@@ -184,7 +199,7 @@
         width: 95%;
       }
 
-      .flex-container2 >div{
+      .flex-container2>div {
         width: 95%;
       }
 
@@ -198,15 +213,15 @@
 </head>
 
 <body>
-  <a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
+  <a href="index.html">
+    <div id="logo"><img src="images/logo2.png"></div>
+  </a>
   <div class="topnav" id="myTopnav">
-    <!--  <a href="index.php">Home</a>        -->
     <a href="plan.html">Plan Your Visit</a>
     <a href="exhibitions.html">Exhibitions</a>
     <a href="about.html">About</a>
     <a href="shop.html">Shop</a>
     <a href="contact.html">Contact</a>
-    <!-- <a href="cart.php">Cart</a> -->
     <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
 
   </div>
@@ -229,77 +244,77 @@
       <h1>Visiting Artists Lectures</h1>
       <p>Hosted online on our Youtube channel as a visual podcast.</p>
       <p>This month's lineup includes:
-          <br>Cory Archangel
-          <br>Rachel Dejoode
-          <br>Braulio Amado
-          <br>Felipe Pantone
+        <br>Cory Archangel
+        <br>Rachel Dejoode
+        <br>Braulio Amado
+        <br>Felipe Pantone
       </p>
       <a href="http://youtube.com/" target="_blank">Watch Here</a>
-        </div>
-        <div>
-          <div class="month">
-            <ul>
-              <li class="prev">&#10094;</li>
-              <li class="next">&#10095;</li>
-              <li>March<br><span style="font-size:18px">2020</span></li>
-            </ul>
-            </div>
-
-            <ul class="weekdays">
-            <li>M</li>
-            <li>T</li>
-            <li>W</li>
-            <li>T</li>
-            <li>F</li>
-            <li>S</li>
-            </ul>
-
-            <ul class="days">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-            <li>6</li>
-            <li>7</li>
-            <li>8</li>
-            <li>9</li>
-            <li><span class="active">10</span></li>
-            <li>11</li>
-            <li>12</li>
-            <li>13</li>
-            <li>14</li>
-            <li>15</li>
-            <li>16</li>
-            <li>17</li>
-            <li>18</li>
-            <li>19</li>
-            <li>20</li>
-            <li>21</li>
-            <li>22</li>
-            <li>23</li>
-            <li>24</li>
-            </ul>
-        </div>
+    </div>
+    <div>
+      <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>March<br><span style="font-size:18px">2020</span></li>
+        </ul>
       </div>
 
-      <div class="flex-container">
-        <div>
-          <h1>Watch an Artist Work</h1>
-          <p>August - December</p>
-          <p>
-            <br />August 30 - September 15: Basic 3d modeling
-            <br>September 25 - October 17: Advanced 3d modeling
-            <br>October 28 - November 30: 3d printing
-            <br>December 6 - February 29: showcase
-          </p>
-        </div>
-        <div>
-          <h1>New Space to Open</h1>
-          <p>June 30 10am</p>
-          <p>We will meet outsite at 9:30 to distribute headsets.</p>
-        </div>
-        </div>
+      <ul class="weekdays">
+        <li>M</li>
+        <li>T</li>
+        <li>W</li>
+        <li>T</li>
+        <li>F</li>
+        <li>S</li>
+      </ul>
+
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div>
+      <h1>Watch an Artist Work</h1>
+      <p>August - December</p>
+      <p>
+        <br />August 30 - September 15: Basic 3d modeling
+        <br>September 25 - October 17: Advanced 3d modeling
+        <br>October 28 - November 30: 3d printing
+        <br>December 6 - February 29: showcase
+      </p>
+    </div>
+    <div>
+      <h1>New Space to Open</h1>
+      <p>June 30 10am</p>
+      <p>We will meet outsite at 9:30 to distribute headsets.</p>
+    </div>
+  </div>
 
   <div class="space"></div>
   <div class="flex-container">
@@ -330,8 +345,8 @@
       <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
     </p>
   </div>
-    <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
-    <div class="space"></div>
+  <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
+  <div class="space"></div>
 
 </footer>
 
