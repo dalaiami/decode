@@ -87,8 +87,12 @@
       margin: 10px 10px;
       align-content: center;
       position: absolute;
-      top: 60px;
+      top: 80px;
       right: 60px;
+    }
+
+    .gallery:hover {
+      animation: grow 3s ease;
     }
 
     .space {
@@ -106,6 +110,12 @@
     @keyframes slide {
         0% {transform:translateX(5vw);}
         100% {transform:translateX(0vw);}
+    }
+
+    @keyframes grow {
+        0% {transform:scale(1);}
+        100% {transform:scale(2);
+        top: 130px; right: 500px;}
     }
 
     /* RESPONSIVE MEDIA QUERIES */
@@ -150,7 +160,6 @@
 <body>
   <a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
   <div class="topnav" id="myTopnav">
-    <!--  <a href="index.php">Home</a>        -->
     <a href="plan.html">Plan Your Visit</a>
     <a href="exhibitions.html">Exhibitions</a>
     <a href="about.html">About</a>
@@ -158,9 +167,7 @@
     <a href="contact.html">Contact</a>
     <!-- <a href="cart.php">Cart</a> -->
     <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
-
   </div>
-
 
   <script>
     function myFunction() {
@@ -174,6 +181,7 @@
   </script>
   <div class="space"></div>
     <div class="space2"></div>
+        <div class="space2"></div>
   <div class="flex-container">
       <div class="gallery">
         <img src="images/elements/model.png" width="550px"/>

@@ -186,6 +186,10 @@ footer {
     height: 130px;
   }
 
+  #logo img:hover {
+    animation: none;
+  }
+
   .topnav a:not(last-child) {
     display: none;
   }

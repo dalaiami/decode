@@ -105,6 +105,23 @@
         transition: 1s;
     }
 
+      .bouncelogo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 32vw;
+    z-index: -1;
+    margin: -75px 0 0 -75px;
+    animation: bounce 6s alternate infinite;
+    }
+
+      @keyframes bounce {
+      0% { transform: translateY(200vh);
+          opacity: 0%;}
+      100% { transform: translateY(10vh);
+          opacity: 80%;}
+    }
+
     /* RESPONSIVE MEDIA QUERIES */
     @media screen and (max-width: 720px) {
       .flex-container {
@@ -126,19 +143,29 @@
     }
 
   </style>
-  <script type="text/javascript">
-  var titleText = document.title;
-  function titleMarquee() {
-    titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
-    document.title = titleText;
-    setTimeout("titleMarquee()", 30);
-  }
-</script>
+      <script type="text/javascript">
+      var titleText = document.title;
+      function titleMarquee() {
+        titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+        document.title = titleText;
+        setTimeout("titleMarquee()", 30);
+      }
+    </script>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
 </head>
   <body onload="titleMarquee()">
   <a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
   <div class="topnav" id="myTopnav">
-    <!--  <a href="index.php">Home</a>        -->
     <a href="plan.html">Plan Your Visit</a>
     <a href="exhibitions.html">Exhibitions</a>
     <a href="about.html">About</a>
@@ -146,20 +173,12 @@
     <a href="contact.html">Contact</a>
     <!-- <a href="cart.php">Cart</a> -->
     <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
-
   </div>
 
+<div class="bouncelogo">
+    <img src="images/iglogo.png" height="700px"/>
+</div>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
   <div class="flex-container">
     <div>
       <div class="about">
