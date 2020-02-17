@@ -97,8 +97,8 @@
   }
 
   #loop:hover {
-    background: blue;
-    border-color: blue;
+    background: radial-gradient(white, blue);
+    border-color: transparent;
     transition:  1s;
   }
 
