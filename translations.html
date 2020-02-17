@@ -16,27 +16,6 @@
     margin: 0 auto;
   }
 
-    .filters  {
-    padding: 10px;
-    text-align: left;
-    font-size: 25px;
-    text-transform: uppercase;
-  }
-
-  .filters a {
-    padding: 10px;
-    border: solid gray;
-    border-radius: 30px;
-    color: gray;
-  }
-
-    .filters a:hover {
-      background: lightgray;
-      border: solid lightgray;
-      color: white;
-      transition: 1s;
-    }
-
     .flex-container {
       display: flex;
       flex-direction: column;
@@ -105,11 +84,12 @@
 
     .grid-container {
       display: grid;
-      grid-template-columns: auto auto auto auto auto;
+      grid-template-columns: 225px auto auto auto auto;
+      grid-template-rows: 325px 325px;
       background: whitesmoke;
       border-radius: 20px;
       margin: 20px auto;
-      padding: 25px;
+      padding: 20px;
     }
     .grid-item {
       background: transparent;
@@ -117,8 +97,33 @@
       align-content: space-around;
     }
 
-    .grid-item:hover {
-      animation: spin 4s ease;
+    .grid-item img {
+      width: 150px;
+    }
+
+    /* .grid-item:hover {
+      animation: grow 4s ease;
+    } */
+
+    .filters  {
+    padding: 10px;
+    text-align: left;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  .filters a {
+    padding: 10px;
+    border: solid gray;
+    border-radius: 30px;
+    color: gray;
+  }
+
+    .filters a:hover {
+      background: lightgray;
+      border: solid lightgray;
+      color: white;
+      transition: 1s;
     }
 
     .space {
@@ -229,18 +234,19 @@
   </div>
 </div>
 <div class="grid-container" >
-  <div class="grid-item"><img src="images/3d/prints/3droof.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dlight.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dgarage.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dconebases.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dstickpoke.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dfence.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dtruck.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dgrate.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dlock.png" width="150"/></div>
-    <div class="grid-item"><img src="images/3d/prints/3dsign.png" width="150"/></div>
-    <p class="filters"><a href="http://instagram.com/dcodegallery" target="_blank">Try the filters</a></p>
+  <div class="grid-item"><img src="images/ogs/roof.jpg" onclick="this.src='images/3d/digital/roof.gif';" onmouseleave="this.src='images/3d/prints/3droof.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/light.jpg" onclick="this.src='images/3d/digital/ceilinglight.gif';" onmouseleave="this.src='images/3d/prints/3dlight.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/garage.jpg"onclick="this.src='images/3d/digital/garage.gif';" onmouseleave="this.src='images/3d/prints/3dgarage.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/conebases.jpg"onclick="this.src='images/3d/digital/conebases.gif';" onmouseleave="this.src='images/3d/prints/3dconebases.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/stickpoke.jpg"onclick="this.src='images/3d/digital/stickpoke.gif';" onmouseleave="this.src='images/3d/prints/3dstickpoke.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/fence.jpg"onclick="this.src='images/3d/digital/fencesplit.gif';" onmouseleave="this.src='images/3d/prints/3dfence.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/truck.jpg"onclick="this.src='images/3d/digital/truck.gif';" onmouseleave="this.src='images/3d/prints/3dtruck.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/grate.jpg"onclick="this.src='images/3d/digital/gate.gif';" onmouseleave="this.src='images/3d/prints/3dgrate.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/lock.jpg"onclick="this.src='images/3d/digital/lock.gif';" onmouseleave="this.src='images/3d/prints/3dlock.png';"/></div>
+    <div class="grid-item"><img src="images/ogs/sign.jpg"onclick="this.src='images/3d/digital/sign.gif';" onmouseleave="this.src='images/3d/prints/3dsign.png';"/></div>
     </div>
+
+    <p class="filters"><a href="http://instagram.com/dcodegallery" target="_blank">Try the filters</a></p>
 
 <div class="space"></div>
 
