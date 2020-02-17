@@ -1,228 +1,247 @@
-html, body {
-  font-family: "helvetica", sans-serif;
-  margin: 10px;
-  padding: 10px;
-}
-
-#logo {
-  position: absolute;
-  left: 15px;
-  top: 10px;
-}
-
-#logo img {
-  height: 111px;
-}
-
-#logo img:hover {
-  animation: grow 4s ease;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
-  position: absolute;
-  right: 10px;
-  top: 20px;
-  border: solid black;
-  border-radius: 20px;
-}
-
-.topnav a {
-  float: left;
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 10px 10px;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.topnav a:hover {
-    background: blue;
-    color: white;
-    transition:  1s;
+  html, body {
+    font-family: "helvetica", sans-serif;
+    margin: 10px;
+    padding: 10px;
   }
 
-  .topnav a:active {
-      background: blue;
-      color: white;
-    }
+  #logo {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
 
-.topnav .icon {
-  display: none;
-}
-
-a:link, a:visited {
-  color: black;
-  text-decoration: none
-}
-
-a:hover, a:active {
-  color: black;
-  text-decoration: none
-}
-
-#loop {
-  position: fixed;
-  top: 80px;
-  right: 0px;
-  background: transparent;
-  border: solid black;
-  border-radius: 100px;
-  margin: 10px;
-  padding: 10px;
-  height: 20px;
-  width: 20px;
-  animation: slide 4s ease;
-}
-
-#loop:hover {
-  background: blue;
-  border-color: blue;
-  transition:  1s;
-}
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-}
-
-h4 {
-  text-transform: uppercase;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  padding: 10px;
-  margin: 10px auto;
-  height: 150px;
-  width: 100%;
-  background-color: transparent;
-  border-top: solid;
-  border-top-color: whitesmoke;
-  border-top-width: thin;
-  font-size: 12px;
-  color: black;
-  text-decoration: none;
-  list-style: none;
-}
-
-#address {
-  margin: 50px 50px;
-  width: 40%;
-  float: left;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: left;
-}
-
-#address>a {
-  font-size: 20px;
-  font-style: bold;
-  line-height: 30px;
-  text-align: center;
-  color: black
-}
-
-#address>p {
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  color: black
-}
-
-#social {
-  margin: 50px auto;
-  width: 30%;
-  float: right;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: left;
-}
-
-#social>p {
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  color: black
-}
-
-#other {
-  margin: 50px 20px;
-  width: 30%;
-  float: center;
-  font-size: 12px;
-  line-height: 18px;
-  text-align: left;
-}
-
-#other>p {
-  font-size: 12px;
-  line-height: 15px;
-  text-align: left;
-  color: black
-}
-
-#top-button {
-  right: 0px;
-  bottom: 0px;
-  width: 15px
-}
-
-@keyframes slide {
-    0% {transform:translateX(5vw);}
-    100% {transform:translateX(0vw);}
-}
-@keyframes grow {
-    0% {transform:scale(1);}
-    100% {transform:scale(6);}
-}
-
-@media screen and (max-width: 600px) {
   #logo img {
-    height: 130px;
+    height: 111px;
   }
 
   #logo img:hover {
-    animation: none;
+    animation: grow 4s ease;
   }
 
-  .topnav a:not(last-child) {
+  .topnav {
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    border: solid black;
+    border-radius: 20px;
+  }
+
+  .topnav a {
+    float: left;
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .topnav a:hover {
+      background: blue;
+      color: white;
+      transition:  1s;
+    }
+
+    .topnav a:active {
+        background: blue;
+        color: white;
+      }
+
+  .topnav .icon {
     display: none;
   }
 
-  .topnav a.icon {
-    float: left;
-    display: block;
+  ::-webkit-scrollbar {
+    width: 10px;
+    padding-top: 40px;
   }
 
-  .topnav.responsive {
-    position: relative;
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px lightgray;
+    border-radius: 20px;
   }
 
-  .topnav.responsive .icon {
+  ::-webkit-scrollbar-thumb {
+    background: lightgray;
+    border-radius: 20px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(blue, white);
+  }
+
+  a:link, a:visited {
+    color: black;
+    text-decoration: none
+  }
+
+  a:hover, a:active {
+    color: black;
+    text-decoration: none
+  }
+
+  #loop {
     position: fixed;
-    right: 0;
-    top: 0;
+    top: 80px;
+    right: 0px;
+    background: transparent;
+    border: solid black;
+    border-radius: 100px;
+    margin: 10px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    animation: slide 4s ease;
   }
 
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  #loop:hover {
+    background: blue;
+    border-color: blue;
+    transition:  1s;
+  }
+
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    text-transform: uppercase;
   }
 
   footer {
-    margin: 100px;
-    width: 95%;
-    float: center;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 10px;
+    margin: 10px auto;
+    height: 150px;
+    width: 100%;
+    background-color: transparent;
+    border-top: solid;
+    border-top-color: whitesmoke;
+    border-top-width: thin;
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
   }
 
-  #social, #other {
-    display: none;
+  #address {
+    margin: 50px 50px;
+    width: 40%;
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
   }
-}
+
+  #address>a {
+    font-size: 20px;
+    font-style: bold;
+    line-height: 30px;
+    text-align: center;
+    color: black
+  }
+
+  #address>p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    color: black
+  }
+
+  #social {
+    margin: 50px auto;
+    width: 30%;
+    float: right;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  #social>p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    color: black
+  }
+
+  #other {
+    margin: 50px 20px;
+    width: 30%;
+    float: center;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+  }
+
+  #other>p {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: left;
+    color: black
+  }
+
+  #top-button {
+    right: 0px;
+    bottom: 0px;
+    width: 15px
+  }
+
+  @keyframes slide {
+      0% {transform:translateX(5vw);}
+      100% {transform:translateX(0vw);}
+  }
+  @keyframes grow {
+      0% {transform:scale(1);}
+      100% {transform:scale(6);}
+  }
+
+  @media screen and (max-width: 600px) {
+    #logo img {
+      height: 130px;
+    }
+
+    #logo img:hover {
+      animation: none;
+    }
+
+    .topnav a:not(last-child) {
+      display: none;
+    }
+
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive .icon {
+      position: fixed;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    footer {
+      margin: 100px;
+      width: 95%;
+      float: center;
+      display: inline;
+    }
+
+    #social, #other {
+      display: none;
+    }
+  }
