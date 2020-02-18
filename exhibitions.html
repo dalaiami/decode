@@ -6,11 +6,11 @@
   <title>Exhibitions</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="shortcut icon" href="images/circle3.png">
   <script src="js/scripts.js"></script>
   <style>
   body {
-    font-family: "helvetica" , sans-serif;
     font-size: 18px;
     line-height: 25px;
     width: 90%;
@@ -103,6 +103,7 @@
 
   .dropdown:hover .dropdown-content {
     display: block;
+    cursor: pointer;
   }
 
   .dropdown:hover p>img {
@@ -113,6 +114,11 @@
       0% {transform:scale(1);}
       100% {transform:scale(1.5);}
   }
+
+  .space {
+    height: 100px;
+  }
+
 
   /* RESPONSIVE MEDIA QUERIES */
   @media screen and (max-width: 720px) {
@@ -145,8 +151,11 @@
     }
 
   }
-    .space {
-      height: 100px;
+
+    @media screen and (max-width: 306px) {
+      .flex-container > .feat > a > img {
+        width: 100%;
+      }
     }
   </style>
 </head>

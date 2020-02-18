@@ -1,3 +1,46 @@
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 300px) {
+  #logo img {
+    height: 20%;
+  }
 
+  #logo img:hover {
+    animation: none;
+  }
+
+  .topnav a:not(last-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .topnav.responsive {
+    position: relative;
+    background-color: white;
+  }
+
+  .topnav.responsive .icon {
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  footer {
+    margin: 100px;
+    width: 95%;
+    float: center;
+    display: inline;
+  }
+
+  #social, #other {
+    display: none;
+  }
 }

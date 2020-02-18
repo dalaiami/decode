@@ -6,11 +6,11 @@
   <title>The Loop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="shortcut icon" href="images/circle3.png">
   <script src="js/scripts.js"></script>
   <style>
     body {
-      font-family: sans-serif, "helvetica";
       font: helvetica;
       font-size: 18px;
       line-height: 35px;
@@ -112,9 +112,6 @@
       list-style-type: none;
     }
 
-    body {
-      font-family: helvetica, sans-serif;
-    }
 
     /* Month header */
     .month {
@@ -122,6 +119,10 @@
       width: 365px;
       background: lightgray;
       text-align: center;
+    }
+
+    .month:hover {
+      cursor: pointer;
     }
 
     /* Month list */
@@ -168,6 +169,10 @@
       padding: 10px 0;
       background: #eee;
       margin: 0;
+    }
+
+    .days:hover {
+      cursor: pointer;
     }
 
     .days li {
