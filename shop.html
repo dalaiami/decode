@@ -58,6 +58,11 @@
       color: black;
     }
 
+
+        .flex-container > div > p > img {
+          cursor: zoom-in;
+        }
+
     .flex-container>div>p>a {
       background-color: white;
       border: solid black;
@@ -157,6 +162,16 @@
       }
     }
   </script>
+
+  <script type="text/javascript">
+function toggle(it) {
+  if (it.height == 230)
+    {it.height = 300;}
+  else
+    {it.height = 230;}
+}
+</script>
+
   <div class="space"></div>
   <div class="shop">
       <div class="space2"></div>
@@ -165,19 +180,19 @@
     </div>
     <div class="flex-container">
       <div>
-        <p><img src="images/shop/cd.png" height="230px"></p>
+        <p><img src="images/shop/cd.png" height="230px" onclick="toggle(this)"></p>
         <p>Recording of Typing on Keyboard as Form of Morse Code</p>
         <p>$30</p>
         <a class="cart" href="#cart">Add to Cart</a>
       </div>
       <div>
-        <p><img src="images/shop/cone.png" height="230px"></p>
+        <p><img src="images/shop/cone.png" height="230px" onclick="toggle(this)"></p>
         <p>Multi-use Location Beacon</p>
         <p>$50</p>
         <a class="cart" href="#cart">Add to Cart</a>
       </div>
       <div>
-        <p><img src="images/shop/keychain.png" height="230px"></p>
+        <p><img src="images/shop/keychain.png" height="230px" onclick="toggle(this)"></p>
         <p>Clip-on Keychain</p>
         <p>$8</p>
         <a class="cart" href="#cart">Add to Cart</a>
@@ -186,19 +201,19 @@
 
     <div class="flex-container">
       <div>
-        <p><img src="images/shop/shirt1.png" height="230px"></p>
+        <p><img src="images/shop/shirt1.png" height="230px" onclick="toggle(this)"></p>
         <p>White T-shirt</p>
         <p>$30</p>
         <a class="cart" href="#cart">Add to Cart</a>
       </div>
       <div>
-        <p><img src="images/shop/shirt2.png" height="230px"></p>
+        <p><img src="images/shop/shirt2.png" height="230px" onclick="toggle(this)"></p>
         <p>Gray T-shirt</p>
         <p>$30</p>
         <a class="cart" href="#cart">Add to Cart</a>
       </div>
       <div>
-        <p><img src="images/shop/question.png" height="220px"></p>
+        <p><img src="images/shop/question.png" height="220px" onclick="toggle(this)"></p>
           <p>OUT OF STOCK</p>
         <p>n/a</p>
       </div>
@@ -206,18 +221,18 @@
 
     <div class="flex-container">
       <div>
-        <p><img src="images/shop/bag.png" height="230px"></p>
+        <p><img src="images/shop/bag.png" height="230px" onclick="toggle(this)"></p>
         <p>Bag</p>
         <p>$0</p>
         <a class="cart" href="#cart">Add to Cart</a>
       </div>
       <div>
-        <p><img src="images/shop/question.png" height="220px"></p>
+        <p><img src="images/shop/question.png" height="220px" onclick="toggle(this)"></p>
           <p>OUT OF STOCK</p>
         <p>n/a</p>
       </div>
       <div>
-        <p><img src="images/shop/balloon.png" height="230px"></p>
+        <p><img src="images/shop/balloon.png" height="230px" onclick="toggle(this)"></p>
         <p>Balloon</p>
         <p>$3</p>
         <a class="cart" href="#cart">Add to Cart</a>
