@@ -143,7 +143,7 @@
     }
 
     h1 {
-      display: none;
+    display: none;
     }
 
     footer img {
@@ -152,9 +152,25 @@
 
   }
 
-    @media screen and (max-width: 306px) {
-      .flex-container > .feat > a > img {
+    @media screen and (max-width: 420px) {
+      body{
+        padding-right: 20px;
+      }
+      .flex-container>div {
         width: 100%;
+      }
+      .flex-container > .feat > a > img {
+        width: 300px;
+        position: absolute;
+        top: 200px;
+        right: 55px;
+      }
+      a h4 {
+         font-size: 25px;
+         padding: 15px;
+      }
+      .space {
+        height: 30px;
       }
     }
   </style>

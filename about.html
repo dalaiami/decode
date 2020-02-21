@@ -145,8 +145,13 @@
         height: 30px;
       }
 
-      .gallery {
-        display: none;
+      .gallery img {
+        display: block;
+        width: 500px;
+        position: absolute;
+        top: 1300px;
+        animation: slideout 10s;
+        opacity: 0;
       }
 
       .space  {
@@ -155,11 +160,16 @@
         position: center middle no-repeat;
       }
 
+      @keyframes slideout {
+          0% {transform:translateX(90vw);}
+          100% {transform:translateX(-80vw);
+          opacity: 1;}
+      }
     }
 
-    @media screen and (max-width: 306px) {
-      img {
-        width: 30%;
+    @media screen and (max-width: 420px) {
+      .flex-container2 img {
+        width: 300px;
       }
     }
   </style>
