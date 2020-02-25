@@ -39,7 +39,8 @@
   }
 
   .topnav a:hover {
-      background: blue;
+      background: radial-gradient(blue,white);
+      border-radius: 20px;
       color: white;
       transition:  1s;
     }
