@@ -13,99 +13,140 @@
     body {
       font: helvetica;
       font-size: 18px;
-      line-height: 35px;
-      width: 80%;
       margin: 0 auto;
       text-align: center;
-      content: center;
+      padding: 20px;
+      width: 90%;
     }
 
     .flex-container {
       display: flex;
       flex-direction: row;
       background-color: white;
-      height: 800px;
-      align-items: center;
-      padding: 10px;
-    }
-
-    .flex-container2 {
-      display: flex;
-      flex-direction: row;
-      background-color: white;
       border: solid lightgray;
       border-radius: 20px;
       align-items: center;
-      padding: 10px;
+      margin-bottom: 20px;
+      padding: 20px;
     }
 
-    .flex-container2 div a {
+    .flex-container>div {
+      background-color: transparent;
+      height: 350px;
+      margin: auto;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .flex-container div a {
       background: transparent;
+      margin-top: 20px;
       padding: 10px;
       border: solid thin gray;
       border-radius: 20px;
       color: gray;
     }
 
-    .flex-container2 div a:hover {
-      background: lightgray;
-      border: lightgray;
-      color: white;
-      transition: 1s;
-    }
-
-    .flex-container>div {
-      background-color: transparent;
-      height: 350px;
-      margin: 20px auto;
-      padding: 20px;
-      text-align: center;
-      line-height: 35px;
-      font-size: 15px;
-    }
-
-    .flex-container2>div {
-      background-color: transparent;
-      height: 350px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-      line-height: 35px;
-      font-size: 15px;
-    }
-
-    .flex-container>div>p>a {
-      background-color: white;
-      border: solid black;
-      border-radius: 50px;
-      align-content: center;
-      margin: 10px;
-      padding: 10px;
-      line-height: 50px;
-      letter-spacing: 3px;
-      font-size: 30px;
-      color: black;
-    }
-
-    .flex-container>div>p>a:hover {
-      background: blue;
-      border: blue;
+    .flex-container div a:hover {
+      background: gray;
+      border: gray;
       color: white;
       transition: 1s;
     }
 
     .space {
-      height: 100px;
+      height: 70px;
     }
 
-    @keyframes slide {
-      0 {
-        transform: translateX();
-      }
+    .lectures {
+      position: absolute;
+      top: 25vh;
+      left: 5vw;
+      width: 665px;
+    }
 
-      100% {
-        transform: translateX();
-      }
+    .lectures p {
+      position: relative;
+      top: 0vh;
+      left: 10vw;
+    }
+
+    .lectures ul {
+      position: relative;
+      top: 0vh;
+      left: 10vw;
+    }
+
+    .lectures a {
+      position: relative;
+      top: 3vh;
+      left: 15vw;
+    }
+
+    .calendar {
+      position: relative;
+      top: 8vh;
+      left: 22vw;
+      width: 315px;
+    }
+
+    .watch{
+      position: absolute;
+      top: 80vh;
+      left: 10vw;
+      line-height: 25px;
+    }
+
+    .watch h1 {
+      position: absolute;
+    }
+
+    .watch h3 , p {
+      position: relative;
+      top: 10vh;
+    }
+
+    .announce {
+      position: relative;
+      top: 6vh;
+      left: 10vw;
+      width: 200px;
+    }
+
+    .announce p {
+      position: relative;
+      top: 2vh;
+      line-height: 25px;
+    }
+
+    .announce img {
+      position: absolute;
+      top: 5vh;
+      left: 20vw;
+    }
+
+    .insta {
+      background-color: white;
+      border: solid black;
+      border-radius: 50px;
+      align-content: center;
+      height: 30px;
+      width: 150px;
+      margin: 20px auto;
+      padding: 20px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      color: black;
+    }
+
+    .insta:hover {
+      background: blue;
+      border: blue;
+      transition: 1s;
+    }
+
+    .insta:hover a {
+      color: white;
     }
 
     ul {
@@ -116,7 +157,8 @@
     /* Month header */
     .month {
       padding: 15px auto;
-      width: 365px;
+      width: 315px;
+      height: 50px;
       background: lightgray;
       text-align: center;
     }
@@ -159,7 +201,7 @@
 
     .weekdays li {
       display: inline-block;
-      width: 13.6%;
+      width: 15%;
       color: #666;
       text-align: center;
     }
@@ -178,7 +220,7 @@
     .days li {
       list-style-type: none;
       display: inline-block;
-      width: 13.6%;
+      width: 15%;
       text-align: center;
       margin-bottom: 5px;
       font-size: 12px;
@@ -193,36 +235,93 @@
       color: white !important
     }
 
-    /* RESPONSIVE MEDIA QUERIES */
-    @media screen and (max-width: 720px) {
+    footer  a {
+      line-height: inherit;
+    }
 
-      .flex-container,
-      .flex-container2 {
+    @keyframes slide {
+      0 {transform: translateX(-30vw); }
+      100% {transform: translateX(0vw);}
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 420px) {
+
+      .flex-container {
         flex-direction: column;
       }
 
-      .flex-container>div {
-        width: 95%;
+      .flex-container h1 {
+        font-size: 30px;
       }
 
-      .flex-container2>div {
-        width: 95%;
+      .lectures {
+        position: absolute;
+        top: 25vh;
+        left: 7vw;
+        width: 80vw;
+        height: 50vh;
+      }
+
+      .lectures p {
+        padding: 20px;
+        position: relative;
+        top: 0vh;
+        left: 5vw;
+      }
+
+      .lectures ul {
+        position: relative;
+        top: -2vh;
+        left: 2vw;
+        line-height: 25px;
+      }
+
+      .lectures a {
+        position: relative;
+        top: 0vh;
+        left: 25vw;
+      }
+
+      .calendar  {
+        position: relative;
+        top: 50vh;
+        left: -5vw;
+        width: 300px;
+        opacity: 0;
+        z-index: -1;
       }
 
       .month {
-        margin-top: 40px;
-        width: 325px;
+        width: 300px;
+        height: 30px;
       }
 
-    }
-    @media screen and (max-width: 420px) {
-      .flex-container2>div {
-        width: 85%;
-        padding-bottom: 85px;
+      .watch {
+        position: relative;
+        top: 0vh;
+        left: -2vw;
       }
-      .month {
-        margin-top: 90px;
-        width: 234px;
+
+      .announce {
+        position: relative;
+        top: 15vh;
+        left: -2vw;
+      }
+
+      .announce img {
+        position: absolute;
+        top: 20vh;
+        left: 35vw;
+        height: 150px;
+      }
+
+      .insta {
+        height: 80%;
+      }
+
+      .space {
+        height: 10vh;
       }
     }
   </style>
@@ -255,19 +354,19 @@
   </script>
   <div class="space"></div>
   <div class="space"></div>
-  <div class="flex-container2">
-    <div>
+  <div class="flex-container">
+    <div class="lectures">
       <h1>Visiting Artists Lectures</h1>
       <p>Hosted online on our Youtube channel as a visual podcast.</p>
-      <p>This month's lineup includes:
-        <br>Cory Archangel
-        <br>Rachel Dejoode
-        <br>Braulio Amado
-        <br>Felipe Pantone
-      </p>
+      <ul>This month's lineup includes:
+        <li>Cory Archangel
+        <li>Rachel Dejoode
+        <li>Braulio Amado
+        <li>Felipe Pantone
+      </ul>
       <a href="http://youtube.com/" target="_blank">Watch Here</a>
     </div>
-    <div>
+    <div class="calendar">
       <div class="month">
         <ul>
           <li class="prev">&#10094;</li>
@@ -315,8 +414,9 @@
   </div>
 
   <div class="flex-container">
-    <div>
-      <h1>Watch an Artist Work</h1>
+    <div class="watch">
+      <h1>Announcements</h1>
+      <h3>Watch an Artist Work</h3>
       <p>August - December</p>
       <p>
         <br />August 30 - September 15: Basic 3d modeling
@@ -325,29 +425,30 @@
         <br>December 6 - February 29: showcase
       </p>
     </div>
-    <div>
-      <h1>New Space to Open</h1>
-      <p>June 30 10am</p>
-      <p>We will meet outsite at 9:30 to distribute headsets.</p>
+    <div class="announce">
+      <h3>New Space to Open</h3>
+      <p>March 22 4pm <br />We will meet onsite at 9:30 to distribute headsets.</p>
+      <img src="images/shop/question.png" height="250px" />
     </div>
   </div>
 
   <div class="space"></div>
-  <div class="flex-container">
-    <div>
-      <p><a href="http://instagram.com/dcodegallery" target="_blank">instagram</a></p>
-    </div>
+
+  <div class="insta">
+    <a href="http://instagram.com/dcodegallery" target="_blank">instagram</a>
   </div>
+
+  <div class="space"></div>
+
 </body>
 <footer>
   <div id="address">
     <a href="index.html">D-Code</a>
-    <p><a href="https://www.google.com/maps/" target=_blank>online</a></p>
-    <p><a href="https://www.google.com/maps/" target=_blank>in the world</a></p>
-    <p><a href="tel:+111 111 1111">+111 111 1111</a></p>
+    <li><a href="https://www.google.com/maps/" target=_blank>online</a></li>
+    <li><a href="https://www.google.com/maps/" target=_blank>in the world</a></li>
+    <li><a href="tel:+111 111 1111">+111 111 1111</a></li>
   </div>
   <div id="other">
-    <p>Useful Links</p>
     <p>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
@@ -355,7 +456,6 @@
     </p>
   </div>
   <div id="social">
-    <p>Socials</p>
     <p>
       <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
       <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
@@ -363,7 +463,5 @@
   </div>
   <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
   <div class="space"></div>
-
 </footer>
-
 </html>
