@@ -99,6 +99,7 @@
 
   #loop:hover {
     background: radial-gradient(white, blue);
+    border-color: blue;
     border-color: transparent;
     transition:  1s;
   }
