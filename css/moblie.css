@@ -34,10 +34,9 @@
   }
 
   footer {
-    margin: 100px;
-    width: 95%;
-    float: center;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    height: 30vw;
   }
 
   #social, #other {
