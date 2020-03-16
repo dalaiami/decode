@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Translations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="shortcut icon" href="images/circle3.png">
+  <script src="js/scripts.js"></script>
+<style>
+  body {
+    margin-left: 30px;
+    padding: 20px;
+    width: 90%;
+  }
+
+  /* .vinyl {
+    position: absolute;
+    top: 10vh;
+    margin: 20px;
+    padding: 20px;
+  } */
+
+  .title {
+    position: absolute;
+    top: 18vh;
+    left: 25vw;
+    font-size: 90px;
+    font-weight: lighter;
+    letter-spacing: 5px;
+    transform: skew(-15deg);
+  }
+
+  .wall {
+    background: linear-gradient(whitesmoke, white);
+    border-radius: 20px;
+    height: 900px;
+    margin-top: 20px;
+    margin-left: 40px;
+    padding: 20px;
+  }
+
+  .grid-container {
+    position: relative;
+    top: 18vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 300px 300px;
+    background: transparent;
+    margin: 20px auto;
+    padding: 20px;
+    z-index: 1;
+  }
+
+  .grid-item {
+    background: transparent;
+    padding: 10px;
+    align-content: space-around;
+  }
+
+  .grid-item img {
+    width: 175px;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.15);
+     }
+
+  .grid-item:hover  {
+    /* animation: grow 4s ease infinite; */
+    cursor: pointer;
+  }
+
+  .card {
+    position: absolute;
+    top: 122vh;
+    left: 8vw;
+    z-index: 4;
+  }
+
+  .card:hover {
+    animation: grow 4s ease;
+    top: 125vh;
+    left: 10vw;
+    transition: 1s;
+  }
+
+  .catalog {
+    position: absolute;
+    top: 118vh;
+    left: 4vw;
+    z-index: 3;
+    transform: skew(10deg);
+  }
+
+  .catalog:hover {
+    animation: grow 4s ease;
+    left: 6vw;
+    transition: 1s;
+  }
+
+.pricelist {
+  position: absolute;
+  top: 125vh;
+  right: -2vw;
+  z-index: 3;
+  overflow: hidden;
+  transform: rotateZ(-20deg);
+}
+
+.pricelist:hover {
+  animation: grow 4s ease;
+  right: 15vw;
+  transition: 1s;
+}
+
+  .cabinet {
+    position: absolute;
+    top: 135vh;
+    left: 1vw;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+.floor {
+  display: grid;
+  position: absolute;
+  top: 145vh;
+  left: 6vw;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  background: linear-gradient(whitesmoke, lightgray);
+  border-radius: 20px;
+  margin-bottom: 50px;
+  padding: 10px;
+  height: 40vh;
+  width: 152vh;
+  transform: skew(-10deg);
+  z-index: 1;
+}
+
+.tile {
+  background: transparent;
+  border: solid thin lightgray;
+  height: 45px;
+  width: 45px;
+  transform: skew(-10deg);
+}
+
+.shows {
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+}
+
+.shows a {
+  background: whitesmoke;
+  padding: 20px;
+  color: gray;
+}
+
+.insta {
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  text-align: right;
+}
+
+.insta a {
+  background: whitesmoke;
+  padding: 20px;
+  color: gray;
+}
+
+.space {
+  height: 100px;
+}
+
+  @keyframes grow {
+    0 {transform: scale(1);}
+    100%{transform: scale(2.2);}
+  }
+
+@media screen and (max-width: 720px) {
+
+    }
+
+@media screen and (max-width: 420px) {
+
+}
+</style>
+</head>
+<body>
+  <a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
+<div class="topnav" id="myTopnav">
+  <a href="plan.html">Plan Your Visit</a>
+  <a href="exhibitions.html">Exhibitions</a>
+  <a href="about.html">About</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" style="font-size:16px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+</div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+</script>
+
+<div class="space"></div>
+
+<!-- <img class="vinyl" src="images/iglogo.png" height="200px"/> -->
+
+<h1 class="title">Translations</h1>
+
+<div class="wall">
+<div class="grid-container" >
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannerroof.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannercorner.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannerduct.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannerconebases.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannerlight.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannercone.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannertruck.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannerbacksign.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannerwindowwall.png"/></div>
+      <div class="grid-item"><img  class="meta" src="images/room/banners/bannersign.png"/></div>
+    </div>
+    </div>
+
+    <img class="card" title="show card" src="images/room/front.png" onclick="this.src='images/room/back.png';" onmouseleave="this.src='images/room/front.png';" height="120px"/>
+
+    <a href="https://youtu.be/314ncBQAuZ8" target="_blank" title="catalog" alt="spring-catalog"><img class="catalog" src="images/room/catalog.png" height="150px"/></a>
+
+    <img class="cabinet" title="3d prints" src="images/room/cabinet.png" height="400px"/>
+
+    <a href="docs/pricelist.pdf" target="_blank" title="pricelist" alt="pricelist"><img class="pricelist" src="images/room/pricelist.png" height="500px"/></a>
+
+    <div class="floor">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile">&nbsp;  &nbsp;  &rarr; </div>
+        <a href="translations.html"><div class="tile">back<br />to<br />3d prints</div></a>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile">&nbsp;  &nbsp;  &rarr; </div>
+        <a href="docs/catalog.pdf" target="_blank" title="catalog" alt="spring-catalog"><div class="tile">download<br />PDF</div></a>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+    </div>
+
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+
+  <a href="newsletter.html"><div id="loop"></div></a>
+
+    <div class="shows">
+      <marquee behavior="alternate" direction="left"><a href="exhibitions.html">other programming</a></marquee>
+    </div>
+
+    <div class="insta">
+    <marquee behavior="slide" direction="left"><a href="http://instagram.com/dcodegallery"> try  our filter</a></marquee>
+    </div>
+
+</body>
+
+<footer>
+  <div id="address">
+    <a href="index.html">D-Code</a>
+    <li><a href="https://www.google.com/maps/" target=_blank>online</a></li>
+    <li><a href="https://www.google.com/maps/" target=_blank>in the world</a></li>
+    <li><a href="tel:+111 111 1111">+111 111 1111</a></li>
+  </div>
+  <div id="other">
+    <p>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </p>
+  </div>
+  <div id="social">
+    <p>
+      <li><a href="http://instagram.com/dcodegallery" target=_blank>Instagram</a></li>
+      <li><a href="https://gallery.tumblr.com/" target=_blank>Tumblr</a></li>
+    </p>
+  </div>
+  <div id="top-button"><a href="#top"><img src="images/iglogo.png" height="50px" /></a></div>
+  <div class="space"></div>
+</footer>
+
+</html>

@@ -19,6 +19,30 @@
       width: 90%;
     }
 
+    .view  {
+      position: absolute;
+      top: 10vh;
+      right: 5vw;
+    padding: 10px;
+    text-align: right;
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+
+  .view a {
+    padding: 10px;
+    border: solid lightgray;
+    border-radius: 30px;
+    color: gray;
+  }
+
+    .view a:hover {
+      background: lightgray;
+      border: solid lightgray;
+      color: white;
+      transition: 1s;
+    }
+
     .flex-container {
       display: flex;
       flex-direction: row;
@@ -249,6 +273,12 @@
     /* RESPONSIVE MEDIA QUERIES */
     @media screen and (max-width: 420px) {
 
+      .view {
+        top: 210vh;
+        right: 8vw;
+        font-size: 15px;
+      }
+
       .flex-container {
         flex-direction: column;
       }
@@ -362,6 +392,7 @@
   </script>
   <div class="space"></div>
   <div class="space"></div>
+  <p class="view"><a href="translations.html">view current show</a></p>
   <div class="flex-container">
     <div class="lectures">
       <h1>Visiting Artists Lectures</h1>

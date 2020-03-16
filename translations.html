@@ -109,21 +109,21 @@
       opacity: 1;
     }
 
-    .filters  {
+    .view  {
     padding: 10px;
     text-align: left;
     font-size: 25px;
     text-transform: uppercase;
   }
 
-  .filters a {
+  .view a {
     padding: 10px;
     border: solid lightgray;
     border-radius: 30px;
     color: gray;
   }
 
-    .filters a:hover {
+    .view a:hover {
       background: lightgray;
       border: solid lightgray;
       color: white;
@@ -142,6 +142,19 @@
     }
 
     .shows a {
+      background: whitesmoke;
+      padding: 20px;
+      color: gray;
+    }
+
+    .insta {
+      padding: 20px;
+      width: 100%;
+      height: 100px;
+      text-align: right;
+    }
+
+    .insta a {
       background: whitesmoke;
       padding: 20px;
       color: gray;
@@ -260,14 +273,18 @@
     <div class="grid-item"><img class="meta" src="images/ogs/lock.jpg" alt="lock" onclick="this.src='images/3d/digital/lock.gif';" onmouseleave="this.src='images/3d/prints/3dlock.png';"/></div>
     </div>
 
-    <p class="filters"><a href="http://instagram.com/dcodegallery" target="_blank">Try the filters</a></p>
+    <p class="view"><a href="translations-install.html">view the show</a></p>
 
 <div class="space"></div>
 
 <a href="newsletter.html"><div id="loop"></div></a>
 
 <div class="shows">
-  <marquee behavior="scroll" direction="left"><a href="exhibitions.html">other programming</a></marquee>
+  <marquee behavior="alternate" direction="left"><a href="exhibitions.html">other programming</a></marquee>
+</div>
+
+<div class="insta">
+<marquee behavior="slide" direction="left"><a href="http://instagram.com/dcodegallery"> try  our filter</a></marquee>
 </div>
 
 </body>

@@ -95,6 +95,7 @@
     height: 20px;
     width: 20px;
     animation: slide 4s ease;
+    z-index: 4;
   }
 
   #loop:hover {
