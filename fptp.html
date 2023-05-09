@@ -1,1 +1,183 @@
-<a href="http://dcodegallery.com"><img src="images/fptpfinal.png" position="center" height="2000px"></a>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>DCODE - CODE CALL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="shortcut icon" href="images/circle3.png">
+  <script src="js/scripts.js"></script>
+  <style>
+    body {
+      font: helvetica;
+      font-size: 18px;
+      line-height: 24px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+    }
+
+    h4{
+      text-align: left;
+      font-size: 20px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      align-items: center;
+    }
+
+    .flex-container2 {
+      display: flex;
+      flex-direction: row;
+      background: whitesmoke;
+      border-radius: 20px;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .flex-container2>div {
+      background: transparent;
+      align-items: center;
+      text-align: justify;
+      padding-right: 20px;
+    }
+
+    .flex-container2 > div > img {
+      background: transparent;
+      align-items: center;
+      text-align: center;
+    }
+
+    .flex-container>div {
+      background: transparent;
+      width: 500px;
+      height: 350px;
+      margin: 50px auto;
+      text-align: center;
+      line-height: 15px;
+      font-size: 15px;
+    }
+
+    .flex-container>div>p>a {
+      background-color: white;
+      border: solid black;
+      border-radius: 50px;
+      align-content: center;
+      margin: 10px;
+      padding: 10px;
+      line-height: 50px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      color: black;
+    }
+
+    .flex-container>div>p>a:hover {
+      background: blue;
+      border: blue;
+      color: white;
+      transition:  1s;
+    }
+
+    .flex-container>.gallery {
+      padding: 20px;
+      margin: 10px 10px;
+      align-content: center;
+      position: absolute;
+      top: 80px;
+      right: 60px;
+    }
+
+    .gallery:hover {
+      animation: grow 3s ease;
+    }
+
+    .space {
+      background: white;
+      height: 125px;
+      position: center middle no-repeat;
+    }
+
+    .space2 {
+      background: white;
+      height: 25px;
+      position: center middle no-repeat;
+    }
+
+    @keyframes slide {
+        0% {transform:translateX(5vw);}
+        100% {transform:translateX(0vw);}
+    }
+
+    @keyframes grow {
+        0% {transform:scale(1);}
+        100% {transform:scale(2);
+        top: 130px; right: 500px;}
+    }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 720px) {
+
+      #logo img {
+        width: 300px;
+      }
+
+      .flex-container2 {
+        flex-direction: column;
+      }
+
+      .flex-container>div {
+        width: 95%;
+
+      }
+
+      .flex-container2 >img {
+        height: 80%;
+        width: 80%;
+      }
+
+      footer img {
+        height: 30px;
+      }
+
+      .gallery img {
+        display: block;
+        width: 500px;
+        position: absolute;
+        top: 1300px;
+        animation: slideout 10s;
+        opacity: 0;
+      }
+
+      .space  {
+        background: white;
+        height: 120px;
+        position: center middle no-repeat;
+      }
+
+      @keyframes slideout {
+          0% {transform:translateX(90vw);}
+          100% {transform:translateX(-80vw);
+          opacity: 1;}
+      }
+    }
+
+    @media screen and (max-width: 420px) {
+      .flex-container2 img {
+        width: 300px;
+      }
+    }
+  </style>
+</head>
+  
+<body>
+    <a href="http://dcodegallery.com"><img src="images/fptpfinal.png" position="center" height="2000px"></a>
+  
+    <a href="codecall.html"><div id="loop"></div></a>
+</body>
+</html>
