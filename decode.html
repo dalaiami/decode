@@ -6,15 +6,6 @@
 <link rel="shortcut icon" href="images/circle3.png">
 <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 
-<script type="text/javascript">
-var titleText = document.title;
-function titleMarquee() {
- titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
- document.title = titleText;
- setTimeout("titleMarquee()", 50);
- }
-</script>
-
 <style>
 body{
     font-family: 'Source Code Pro', monospace;
@@ -128,8 +119,8 @@ p {
 }
 </style>
 </head>
-<body onload="titleMarquee()">
-	<a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
+<body>
+<a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
   <div class="topnav" id="myTopnav">
     <a href="plan.html">Plan Your Visit</a>
     <a href="exhibitions.html">Exhibitions</a>
