@@ -9,9 +9,184 @@
 	  <link rel="shortcut icon" href="images/circle3.png">
   	<script src="js/scripts.js"></script>
   <style>
-    
+    body {
+      font-size: 18px;
+      line-height: 25px;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      background: transparent;
+      align-items: center;
+      margin: 20px;
+      padding: 10px;
+    }
+
+    .flex-container>div {
+      background: transparent;
+      width: 400px;
+      height: 350px;
+      margin: 20px auto;
+      padding: 20px;
+      text-align: center;
+      line-height: 15px;
+      font-size: 25px;
+    }
+
+    div > h4 {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: black;
+      font: 32px;
+      /* background: lightgray; */
+      padding: 10px;
+      border-radius: 100px;
+    }
+
+    /* a h4:hover {
+      color: white;
+      font-size: 30px;
+      background: gray;
+      padding: 20px;
+      border-radius: 100px;
+      transition: 1s;
+    } */
+
+    .flex-container>div>p {
+      background: transparent;
+      align-content: left;
+      line-height: 25px;
+      letter-spacing: 1px;
+      font-size: 15px;
+      color: black;
+    }
+
+
+      .flex-container > div > p > img {
+          cursor: zoom-in;
+        }
+
+    .flex-container>div>p>a {
+      background-color: white;
+      border: solid black;
+      border-radius: 30px;
+      align-content: center;
+      margin: 10px;
+      padding: 10px;
+      line-height: 50px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      color: black;
+    }
+
+    .flex-container>div>p>a:hover {
+      background: blue;
+      border: blue;
+      color: white;
+      transition:  1s;
+    }
+
+    .codecall {
+      margin-top: 20px;
+    }
+
+    /* .codecall:hover {
+      background: whitesmoke;
+      border-radius: 20px;
+    } */
+
+    .visit{
+      color: gray;
+      font-size: 15px;
+      margin: 10px;
+      padding: 3px;
+      border: solid thin gray;
+      border-radius: 20px;
+    }
+
+    .visit:hover {
+      background: white;
+      color: black;
+      border-color: black;
+    }
+
+    .insta {
+      background-color: white;
+      border: solid black;
+      border-radius: 50px;
+      align-content: center;
+      height: 30px;
+      width: 150px;
+      margin: 20px auto;
+      padding: 20px;
+      letter-spacing: 3px;
+      font-size: 30px;
+      color: black;
+    }
+
+    .insta:hover {
+      background: blue;
+      border: blue;
+      transition: 1s;
+    }
+
+    .insta:hover a {
+      color: white;
+    }
+
+        .space {
+          height: 100px;
+        }
+
+        .space2 {
+          height: 15px;
+        }
+
+    /* RESPONSIVE MEDIA QUERIES */
+    @media screen and (max-width: 720px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .flex-container>div {
+        width: 95%;
+      }
+
+      .flex-container>div>p>a {
+        margin-left: 20px;
+      }
+
+      footer img {
+        height: 30px;
+      }
+    }
+
+    @media screen and (max-width: 306px) {
+      .flex-container {
+        flex-direction: column;
+      }
+
+      .flex-container>div {
+        width: 95%;
+      }
+
+      footer {
+        align-content: center;
+        justify-content: center;
+      }
+
+      footer img {
+        height: 3vh;
+      }
+    }
+
   </style>
-  
+	</head>
+	
   <body>
     <a href="index.html"><div id="logo"><img src="images/logo2.png"></div></a>
   <div class="topnav" id="myTopnav">
