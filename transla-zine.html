@@ -18,10 +18,18 @@
     }
 	  
      .zine > p:hover{
-	cursor: help;
-	cursor-size: 40px;
-	mix-blend-mode: difference;
-	filter: invert(1) grayscale(1) contrast(2);
+	.cursor {
+ 	 position: absolute;
+	  width: 40px;
+	  height: 40px;
+	  background: #fff;
+	  border-radius: 50%;
+	  top: var(--y, 0);
+	  left: var(--x, 0);
+	  transform: translate(-50%, -50%);
+	  z-index: 2;
+	  mix-blend-mode: difference;
+	}
 	     }
    
     .zine {
